@@ -1,0 +1,20 @@
+[
+    {
+      "id": "penal-colony",
+      "title": "Colonia Penal Beta 5",
+      "description": "Una prisión de trabajo autosuficiente, una fortaleza llena de los criminales más peligrosos de la galaxia.",
+      "href": "/maps/penal-colony/cardImg.png"
+    },
+    {
+      "id": "colony-cruiser",
+      "title": "Crucero Colonial",
+      "description": "Una prisión de trabajo autosuficiente, una fortaleza llena de los criminales más peligrosos de la galaxia.",
+      "href": "/maps/penal-colony/cardImg.png"
+    },
+    {
+      "id": "spaceport",
+      "title": "Estación Espacial",
+      "description": "Una prisión de trabajo autosuficiente, una fortaleza llena de los criminales más peligrosos de la galaxia.",
+      "href": "/maps/penal-colony/cardImg.png"
+    }
+  ]

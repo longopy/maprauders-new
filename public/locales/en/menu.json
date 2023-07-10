@@ -1,0 +1,20 @@
+[
+    {
+      "id": "penal-colony",
+      "title": "Penal Colony Beta 5",
+      "description": "A self sufficient labour prison facility, a fortress filled with the most dangerous criminals in the galaxy.",
+      "href": "/maps/penal-colony/cardImg.png"
+    },
+    {
+      "id": "colony-cruiser",
+      "title": "Colony Cruiser",
+      "description": "A self sufficient labour prison facility, a fortress filled with the most dangerous criminals in the galaxy.",
+      "href": "/maps/penal-colony/cardImg.png"
+    },
+    {
+      "id": "spaceport",
+      "title": "SpacePort",
+      "description": "A self sufficient labour prison facility, a fortress filled with the most dangerous criminals in the galaxy.",
+      "href": "/maps/penal-colony/cardImg.png"
+    }
+  ]
