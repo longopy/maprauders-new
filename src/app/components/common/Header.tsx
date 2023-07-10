@@ -1,8 +1,10 @@
+"use client";
+import AppLogo from "@/app/components/common/AppLogo";
 import Link from "next/link";
-import ThemeChanger from "@/app/components/common/ThemeSwitcher";
-import LangSwitcher from "@/app/components/common/LangSwitcher";
-import { promiseTranslation } from "../../i18n";
-import AppLogo from '@/app/components/common/AppLogo';
+import { useState } from 'react';
+import { useTranslation } from '@/app/i18n/client'
+import ThemeChanger from '@/app/components/common/ThemeSwitcher';
+import LangSwitcher from '@/app/components/common/LangSwitcher';
 
 const links = [
   {
@@ -15,8 +17,8 @@ const links = [
   },
 ];
 
-export async function Header({ lng }: { lng: string }) {
-  const { t } = await promiseTranslation(lng);
+export function Header({ lng }: { lng: string }) {
+  const { t } = useTranslation(lng);
   const headers: any = t("headers", { returnObjects: true });
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 bg-dark text-black dark:text-light align-middle">

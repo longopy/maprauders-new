@@ -4,7 +4,7 @@ import { promises as fs } from "fs";
 import { Header } from '@/app/components/common/Header';
 
 const fetchItems = (lng: string) => {
-  return fs.readFile(`public/locales/${lng}/menu.json`).then((res) => {
+  return fs.readFile(`src/app/i18n/locales/${lng}/menu.json`).then((res) => {
     return JSON.parse(res.toString());
   });
 };
