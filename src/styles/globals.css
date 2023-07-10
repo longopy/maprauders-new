@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   /* Your default theme */
   --background: white;
@@ -12,6 +13,7 @@
   --background: black;
   --foreground: white;
 }
+
 
 body {
   color: rgb(var(--foreground-rgb));

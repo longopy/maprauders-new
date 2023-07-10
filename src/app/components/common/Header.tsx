@@ -1,10 +1,12 @@
 "use client";
 import AppLogo from "@/app/components/common/AppLogo";
 import Link from "next/link";
-import { useState } from 'react';
-import { useTranslation } from '@/app/i18n/client'
-import ThemeChanger from '@/app/components/common/ThemeSwitcher';
-import LangSwitcher from '@/app/components/common/LangSwitcher';
+import { useState } from "react";
+import { useTranslation } from "@/app/i18n/client";
+import ThemeChanger from "@/app/components/common/ThemeSwitcher";
+import LangSwitcher from "@/app/components/common/LangSwitcher";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+
 
 const links = [
   {
@@ -20,27 +22,47 @@ const links = [
 export function Header({ lng }: { lng: string }) {
   const { t } = useTranslation(lng);
   const headers: any = t("headers", { returnObjects: true });
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 bg-dark text-black dark:text-light align-middle">
-      <nav
-        className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
-        aria-label="Global"
+    <nav className="flex items-center justify-between flex-wrap py-6 px-12 bg-dark">
+      <Link
+        href="/"
+        className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72"
       >
-        <Link href="/" className="flex-none">
-          <AppLogo />
-        </Link>
-        <ul className="flex gap-4 text-light">
+        <AppLogo />
+      </Link>
+      <div className="block lg:hidden">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+        >
+          <Bars3Icon className={`fill-current text-white hover:text-accent h-8 w-8 ${isOpen ? "hidden" : "block"}`} />
+          <XMarkIcon className={`fill-current text-white hover:text-accent h-8 w-8 ${isOpen ? "block" : "hidden"}`} />
+        </button>
+      </div>
+      <div
+        className={`w-full block lg:flex lg:items-center lg:w-auto ${
+          isOpen ? "block" : "hidden"
+        }`}
+      >
+        <div className="text-sm lg:flex-grow rounded border-black mr-4">
           {links.map(({ id, route }) => (
-            <li key={route}>
-              <Link href={`/${lng}${route}`}>{headers[id]}</Link>
-            </li>
+            <span
+              key={route}
+              className="block mt-6 lg:inline-block lg:mt-0 text-white-200 mr-6 align-middle lg:mt0 text-base text-light hover:text-accent font-medium"
+            >
+              <Link href={`/${lng}${route}`} >
+                {headers[id]}
+              </Link>
+            </span>
           ))}
-        </ul>
-        <div className="flex flex-row items-center gap-3 mt-5 sm:justify-end sm:mt-0 sm:pl-5 text-light">
+        </div>
+        <div className="flex gap-3 text-white mt-2 lg:mt-0 mr-4 lg:mr-0 justify-end">
           <ThemeChanger />
           <LangSwitcher lng={lng} />
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }

@@ -17,11 +17,13 @@ export default function LangSwitcher({ lng }) {
   };
 
   return (
-    <div className="flex flex-col border-light border-2 rounded-full p-1 text-light">
-      <Link href={getUrl(lngSelectable)}>
-        <span className="align-middle uppercase">{lngSelectable}</span>{" "}
-        <LanguageIcon className="h-4 w-4 text-white inline-block" />
-      </Link>
+    <div>
+    <Link className="border-light border-2 rounded-full p-1 text-light hover:bg-accent hover:border-accent bg-transparent group flex items-center" href={getUrl(lngSelectable)}>
+      <span className="uppercase group-hover:text-dark text-xs font-bold">
+        {lngSelectable}
+      </span>
+      <LanguageIcon className="h-5 w-5 text-white hover:text-accent inline-block group-hover:text-black" />
+    </Link>
     </div>
   );
 }
