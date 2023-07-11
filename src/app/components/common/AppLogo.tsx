@@ -4,8 +4,8 @@ export default function AppLogo() {
     <Image
       src="/logos/maprauders.svg"
       alt="Maprauders Logo"
-      width={228.55}
-      height={32}
+      width={257.117}
+      height={36}
       priority
     />
   );

@@ -1,11 +1,13 @@
 import { dir } from "i18next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import  Providers  from "./providers";
+import Providers from "./providers";
 import "../../styles/globals.css";
 import { languages } from "@/app/i18n/settings";
+import { Suspense } from "react";
+import { Loading } from "@/app/components/common/Loading";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Maprauders",
@@ -25,7 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lng} dir={dir(params.lng)}>
-      <body className={inter.className}>
+      <body
+        className={`bg-gradient-to-t to-zinc-200 from-sky-100 dark:from-sky-900 dark:to-dark ${inter.className}`}
+      >
         <Providers>{children}</Providers>
       </body>
     </html>

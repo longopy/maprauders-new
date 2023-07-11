@@ -15,15 +15,16 @@ module.exports = {
       current: 'currentColor',
       dark: colors.slate[800],
       light: colors.white,
-      accent: colors.blue[500],
+      accent: colors.sky[400],
+      sky: colors.sky,
       black: colors.black,
       white: colors.white,
-      gray: colors.slate,
-      green: colors.emerald,
-      blue: colors.blue,
-      purple: colors.violet,
-      yellow: colors.amber,
-      pink: colors.fuchsia,
+      gray: colors.gray,
+      slate: colors.slate,
+      zinc: colors.zinc,
+    },
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
