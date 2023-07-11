@@ -1,0 +1,29 @@
+
+.leaflet-container {
+    width: 100wh; 
+    height: 100vh;
+    z-index: 1;
+    @apply bg-gradient-to-t from-sky-900 to-dark;
+  }
+
+.leaflet-control-zoom {
+  @apply scale-110 !important;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  @apply bg-dark !important;
+  border: none !important;
+  @apply hover:bg-sky-600 !important;
+}
+
+.leaflet-control-zoom-in > span, .leaflet-control-zoom-out > span {
+  color: white;
+}
+
+.leaflet-disabled {
+  @apply hover:bg-dark !important;
+}
+
+.leaflet-disabled > span {
+  color: gray !important;
+}

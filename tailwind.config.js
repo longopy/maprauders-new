@@ -13,7 +13,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      dark: colors.slate[800],
+      dark: colors.slate[900],
       light: colors.white,
       accent: colors.sky[400],
       sky: colors.sky,

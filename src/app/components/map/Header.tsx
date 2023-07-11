@@ -13,7 +13,7 @@ export function Header({ lng }: { lng: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap py-4 px-12 bg-transparent">
+    <nav className="fixed flex items-center justify-between flex-wrap py-4 px-12 bg-transparent z-50">
       <Link
         href="/"
         className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72"

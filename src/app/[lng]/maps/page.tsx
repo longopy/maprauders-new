@@ -22,10 +22,9 @@ export default async function Maps({ params }) {
             {items.map((item: any) => (
               <Link key={item.id} href={`/${lng}/maps/[id]`} as={`/${lng}/maps/${item.id}`}>
                 <MenuCard
-                  key={item.id}
                   title={item.title}
                   description={item.description}
-                  href={item.href}
+                  href={`/images/maps/${item.id}/card.png`}
                 />
               </Link>
             ))}

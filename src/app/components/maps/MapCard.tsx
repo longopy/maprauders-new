@@ -5,12 +5,12 @@ interface MenuItem {
   href: string;
 }
 
-export default function MapCard({ title, description, href }: MenuItem) {
+export default function MapCard({title, description, href}: MenuItem) {
   return (
       <div className="rounded-md shadow-md bg-white dark:bg-dark hover:border-accent hover:border-opacity-100 hover:scale-105 border border-zinc-100 dark:border-opacity-20 cursor-pointer flex flex-col h-full group">
         <Image
           src={href}
-          alt={title}
+          alt={`${title} image`}
           className="w-full h-full rounded-t-md"
           width={640}
           height={75}

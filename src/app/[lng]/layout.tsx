@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang={params.lng} dir={dir(params.lng)}>
       <body
-        className={`bg-gradient-to-t to-zinc-200 from-sky-100 dark:from-sky-900 dark:to-dark ${inter.className}`}
+        className={inter.className}
       >
         <Providers>{children}</Providers>
       </body>

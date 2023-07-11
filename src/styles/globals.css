@@ -2,17 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+--accent: @color('sky-400');
+--dark-accent: @color('slate-900');
+
 :root {
   /* Your default theme */
-  --background: white;
-  --background-rgb: rgb(255, 255, 255);
-  --foreground: black;
+  --background-color: white;
+  --foreground-color: black;
 }
 
-[data-theme="dark"] {
-  --background: black;
-  --background-rgb: rgb(0, 0, 0);
-  --foreground: white;
+.dark {
+  /* Your dark theme */
+  --background-color: --dark-accent;
+  --foreground-color: white;
+}
+
+.dark body {
+  @apply bg-gradient-to-t from-sky-900 to-dark;
+}
+body{
+  @apply bg-gradient-to-t from-sky-200 to-zinc-300;
 }
 
 html {
@@ -20,24 +29,4 @@ html {
   font-smooth: auto;
   height: auto;
   min-height: 100%;
-}
-
-.bg-background-100 {
-  background-color: rgb(241 245 249/1);
-}
-
-.bg-background-100-dark {
-  background-color: (241 245 249/1);
-}
-
-.bg-linear-gradient-100 {
-  background: linear-gradient(90deg, #fff2, #0f172a05, #fff2);
-}
-
-.bg-linear-gradient-dark {
-  background: linear-gradient(90deg, #00000007, #aaaaaa06, #00000007);
-}
-
-.bg-background-900 {
-  background-color: rgb(15 23 42/1);
 }
