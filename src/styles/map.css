@@ -8,6 +8,7 @@
 
 .leaflet-control-zoom {
   @apply scale-110 !important;
+  @apply mr-6 mb-6 !important;
 }
 
 .leaflet-control-zoom-in, .leaflet-control-zoom-out {

@@ -9,12 +9,10 @@ export default function MapPage({ params }) {
     <div>
       <Header lng={lng} />
       <MapComponent
-        zoom={1}
-        minZoom={1}
-        maxZoom={5}
-        center={[5, 5]}
-        padding={[600, 650]}
-        imageDimensions={[2048, 1080]}
+        zoom={-2}
+        minZoom={-2}
+        padding={[150, 150]}
+        imageDimensions={[1172.03, 792.57]}
         imagePath={`/images/maps/${id}/map.svg`}
       />
     </div>

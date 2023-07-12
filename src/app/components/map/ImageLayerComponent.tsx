@@ -7,23 +7,22 @@ import "../../../styles/map.css";
 
 
 export function ImageLayerComponent({
-  padding,
   imageDimensions,
   imagePath,
 }: {
-  padding: Array<number>;
   imageDimensions: Array<number>;
   imagePath: string;
 }) {
   const map = useMap();
   let imageBounds = latLngBounds([
-    new LatLng(padding[0], padding[1]),
-    new LatLng(imageDimensions[0], imageDimensions[1]),
+    new LatLng(-imageDimensions[1], -imageDimensions[0]),
+    new LatLng(imageDimensions[1], imageDimensions[0]),
   ]);
   map.fitBounds(imageBounds);
   return (
     <SVGOverlay bounds={imageBounds}>
        <SVG
+       className="mt-10"
         src={imagePath}
         width="auto"
         height="auto"
