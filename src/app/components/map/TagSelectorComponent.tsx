@@ -1,6 +1,5 @@
 "use client";
 import { useTranslation } from "@/app/i18n/client";
-import { useState } from "react";
 
 export function TagSelectorComponent({ lng }: { lng: string }) {
   const { t } = useTranslation(lng);
