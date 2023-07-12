@@ -2,5 +2,8 @@
     "headers": {
         "maps": "Maps",
         "about": "About"
+    },
+    "tags": {
+        "title": "Filters"
     }
 }

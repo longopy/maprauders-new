@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { languages } from "@/app/i18n/settings";
 
 // @ts-ignore Parameter
-export default function LangSwitcher({ lng }) {
+export default function LangSwitcherComponent({ lng }) {
   const pathname = usePathname();
   const getLngSelectable = () => {
     return languages.filter((lang) => lang !== lng)[0];

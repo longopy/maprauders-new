@@ -10,7 +10,7 @@ const themeIcons = {
   dark: <MoonIcon className={classes} />,
 };
 
-export default function ThemeSwitcher() {
+export default function ThemeSwitcherComponent() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 

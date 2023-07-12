@@ -1,10 +1,10 @@
 "use client";
-import AppLogo from "@/app/components/common/AppLogo";
+import AppLogoComponent from "@/app/components/common/AppLogoComponent";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "@/app/i18n/client";
-import ThemeChanger from "@/app/components/common/ThemeSwitcher";
-import LangSwitcher from "@/app/components/common/LangSwitcher";
+import ThemeSwitcherComponent from "@/app/components/common/ThemeSwitcherComponent";
+import LangSwitcherComponent from "@/app/components/common/LangSwitcherComponent";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 
@@ -19,18 +19,18 @@ const links = [
   },
 ];
 
-export function Header({ lng }: { lng: string }) {
+export function HeaderComponent({ lng, themeSwitcher }: { lng: string, themeSwitcher: boolean }) {
   const { t } = useTranslation(lng);
   const headers: any = t("headers", { returnObjects: true });
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap py-4 px-12 bg-dark border-b dark:border-zinc-100 dark:border-opacity-20">
+    <nav className="flex items-center justify-between flex-wrap py-4 px-14 bg-dark border-b border-accent border-opacity-40">
       <Link
         href="/"
         className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72"
       >
-        <AppLogo />
+        <AppLogoComponent />
       </Link>
       <div className="block lg:hidden">
         <button
@@ -59,8 +59,8 @@ export function Header({ lng }: { lng: string }) {
           ))}
         </div>
         <div className="flex gap-3 text-white mt-2 lg:mt-0 mr-4 lg:mr-0 justify-end">
-          <ThemeChanger />
-          <LangSwitcher lng={lng} />
+          {themeSwitcher ? <ThemeSwitcherComponent /> : null}
+          <LangSwitcherComponent lng={lng} />
         </div>
       </div>
     </nav>

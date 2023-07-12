@@ -1,11 +1,4 @@
 "use client";
-import AppLogo from "@/app/components/common/AppLogo";
-import Link from "next/link";
-import { useState } from "react";
-import { useTranslation } from "@/app/i18n/client";
-import ThemeChanger from "@/app/components/common/ThemeSwitcher";
-import LangSwitcher from "@/app/components/common/LangSwitcher";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const links = [
   {
@@ -18,7 +11,7 @@ const links = [
   },
 ];
 
-export function Loading() {
+export function LoadingComponent() {
   return (
     <div
       className="absolute bg-dark bg-opacity-80 h-full w-full flex justify-center items-center"
