@@ -1,0 +1,22 @@
+{
+    "loot": "Loot",
+    "ammo": "Ammo",
+    "medic_kit": "Medic kit",
+    "container": "Container",
+    "purse": "Purse",
+    "dead_body": "Dead body",
+    "blocked_resource_box": "Blocked box",
+    "blocked_access": "Blocked access",
+    "depot": "Depot",
+    "vault": "Vault",
+    "hidden_stash": "Hidden stash",
+    "extraction": "Extraction",
+    "escape_pod": "Escape pod",
+    "airlock": "Airlock",
+    "mission": "Mission",
+    "zero_to_hero": "Zero to hero",
+    "faction_mission": "Faction mission",
+    "enemy": "Enemy",
+    "enemy_spawn": "Enemy spawn",
+    "breach_pod": "Breach pod"
+  }

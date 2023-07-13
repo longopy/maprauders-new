@@ -1,25 +1,23 @@
 "use client";
-import { useTranslation } from "@/app/i18n/client";
 import {
-    ChevronLeftIcon,
-    ChevronRightIcon
+  ChevronLeftIcon,
+  ChevronRightIcon
 } from "@heroicons/react/24/solid";
-import { Component, useState } from "react";
-import { TagSelectorComponent } from '@/app/components/map/TagSelectorComponent';
+import { useState } from "react";
+import "../../../styles/sidebar.css";
 
-export function SidebarComponent({lng }: { lng: string }) {
-  const { t } = useTranslation(lng);
+export function SidebarComponent({ component }: { component: React.ReactNode}) {
   const [collapsed, setSidebarCollapsed] = useState(true);
   return (
     <div
-      className={`flex fixed z-10 h-full  transition-all ease-in-out duration-200 
-    ${collapsed ? "-translate-x-96" : "translate-x-0"}`}
+      className={`flex fixed z-10 h-full transition-all ease-in-out duration-150 
+    ${collapsed ? "translate-x-sidebar" : "translate-x-0"}`}
     >
       <div
-        className="w-96 z-10 border-r border-accent h-full bg-dark"
+        className="w-sidebar z-10 border-r border-accent h-full bg-dark overflow-y-auto"
       >
-        <div className="mt-20 p-8">
-          <TagSelectorComponent lng={lng} />
+        <div className="mt-24">
+          {component}
         </div>
       </div>
       <div className="mt-24 text-white z-20">

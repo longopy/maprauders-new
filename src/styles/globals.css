@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
---accent: @color('sky-400');
---dark-accent: @color('slate-900');
 
 :root {
   /* Your default theme */
@@ -22,6 +20,12 @@
 }
 body{
   @apply bg-gradient-to-t from-sky-200 to-zinc-300;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.7) rgb(15, 23, 42);
+;
 }
 
 html {

@@ -1,0 +1,22 @@
+{
+    "loot": "Botín",
+    "ammo": "Munición",
+    "medic_kit": "Botiquín",
+    "container": "Contenedor",
+    "purse": "Monedero",
+    "dead_body": "Cadáver",
+    "blocked_resource_box": "Caja bloqueada",
+    "blocked_access": "Acceso bloqueado",
+    "depot": "Almacén",
+    "vault": "Bóveda",
+    "hidden_stash": "Alijo oculto",
+    "extraction": "Extracción",
+    "escape_pod": "Cápsula de escape",
+    "airlock": "Exclusa de aire",
+    "mission": "Misión",
+    "zero_to_hero": "De cero a héroe",
+    "faction_mission": "Misión de facción",
+    "enemy": "Enemigo",
+    "enemy_spawn": "Aparición enemigos",
+    "breach_pod": "Cápsula enemiga"
+  }

@@ -1,0 +1,7 @@
+.translate-x-sidebar {
+    transform: translateX(-32rem);
+}
+
+.w-sidebar {
+    width: 32rem;
+}

@@ -17,14 +17,12 @@ module.exports = {
       light: colors.white,
       accent: colors.sky[400],
       sky: colors.sky,
+      blue: colors.blue,
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
       slate: colors.slate,
       zinc: colors.zinc,
-    },
-    fontFamily: {
-      montserrat: ['Montserrat', 'sans-serif'],
     },
     extend: {
       backgroundImage: {

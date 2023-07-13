@@ -1,0 +1,33 @@
+[
+  {
+    "id": "loot",
+    "color": "#3e92d0",
+    "tags": [
+      "ammo",
+      "medic_kit",
+      "container",
+      "purse",
+      "dead_body",
+      "blocked_resource_box",
+      "blocked_access",
+      "depot",
+      "vault",
+      "hidden_stash"
+    ]
+  },
+  {
+    "id": "extraction",
+    "color": "#facd45",
+    "tags": ["escape_pod", "airlock"]
+  },
+  {
+    "id": "mission",
+    "color": "#5db670",
+    "tags": ["zero_to_hero", "faction_mission"]
+  },
+  {
+    "id": "enemy",
+    "color": "#d43c3c",
+    "tags": ["enemy_spawn", "breach_pod"]
+  }
+]
