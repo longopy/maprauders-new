@@ -1,0 +1,254 @@
+[
+  {
+    "id": 0,
+    "name": "Exclusa GYM - 4D",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>exclusa de aire</a> permite escapar del mapa haciendo uso de la nave personal. Recuerda llevar contigo la <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>tarjeta de capitán</a> correcta."
+  },
+  {
+    "id": 1,
+    "name": "Exclusa VISITA - 5D",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>exclusa de aire</a> permite escapar del mapa haciendo uso de la nave personal. Recuerda llevar contigo la <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>tarjeta de capitán</a> correcta."
+  },
+  {
+    "id": 2,
+    "name": "Exclusa CANTINA - 3C",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>exclusa de aire</a> permite escapar del mapa haciendo uso de la nave personal. Recuerda llevar contigo la <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>tarjeta de capitán</a> correcta."
+  },
+  {
+    "id": 3,
+    "name": "Exclusa TALLER - 2B",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>exclusa de aire</a> permite escapar del mapa haciendo uso de la nave personal. Recuerda llevar contigo la <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>tarjeta de capitán</a> correcta."
+  },
+  {
+    "id": 4,
+    "name": "Exclusa BIBLIOTECA - 1A",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>exclusa de aire</a> permite escapar del mapa haciendo uso de la nave personal. Recuerda llevar contigo la <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>tarjeta de capitán</a> correcta."
+  },
+  {
+    "id": 5,
+    "name": "Cápsula de escape",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Escape_Pod'>cápsula de escape</a> además de permitirte escapar del mapa también permite abordar otras naves. Ten cuidado, se trata de un medio de transporte bastante peligroso debido a la fragilidad de la cápsula."
+  },
+  {
+    "id": 6,
+    "name": "Cápsula de escape",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Escape_Pod'>cápsula de escape</a> además de permitirte escapar del mapa también permite abordar otras naves. Ten cuidado, se trata de un medio de transporte bastante peligroso debido a la fragilidad de la cápsula."
+  },
+  {
+    "id": 7,
+    "name": "Alijo Oculto",
+    "description": "Los alijos ocultos pueden contener objetos de valor. En algunos mapas te será complicado encontrarlos."
+  },
+  {
+    "id": 8,
+    "name": "Alijo Oculto",
+    "description": "Los alijos ocultos pueden contener objetos de valor. En algunos mapas te será complicado encontrarlos."
+  },
+  {
+    "id": 9,
+    "name": "Alijo Oculto",
+    "description": "Los alijos ocultos pueden contener objetos de valor. En algunos mapas te será complicado encontrarlos."
+  },
+  {
+    "id": 10,
+    "name": "Bóveda",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Vault'>bóveda</a> puede contener objetos de gran valor, como un <a target='_blank' href='https://marauders.fandom.com/wiki/Gold_Bullion'>lingote de oro</a>, uno de los bienes más preciados. Para abrirla necesitarás un <a target='_blank' href='https://marauders.fandom.com/wiki/Blow_Torch'>soplete</a>."
+  },
+  {
+    "id": 11,
+    "name": "Acceso bloqueado",
+    "description": "En los accesos bloqueados podrás encontrar objetos de valor como <a target='_blank' href='https://marauders.fandom.com/wiki/Jewellery_Box'>joyeros</a>, <a target='_blank' href='https://marauders.fandom.com/wiki/War_Bonds'>bonos de guerra</a> o materiales. Para abrirlos tendrás que usar una <a target='_blank' href='https://marauders.fandom.com/wiki/Lockpick'>ganzúa</a>."
+  },
+  {
+    "id": 12,
+    "name": "Acceso bloqueado",
+    "description": "En los accesos bloqueados podrás encontrar objetos de valor como <a target='_blank' href='https://marauders.fandom.com/wiki/Jewellery_Box'>joyeros</a>, <a target='_blank' href='https://marauders.fandom.com/wiki/War_Bonds'>bonos de guerra</a> o materiales. Para abrirlos tendrás que usar una <a target='_blank' href='https://marauders.fandom.com/wiki/Lockpick'>ganzúa</a>."
+  },
+  {
+    "id": 13,
+    "name": "Caja de recursos bloqueada",
+    "description": "En las cajas de recursos bloqueadas podrás encontrar materiales y si tienes suerte objetos más valiosos como el <a target='_blank' href='https://marauders.fandom.com/wiki/Blow_Torch'>soplete</a>. Para abrirla tendrás que usar una <a target='_blank' href='https://marauders.fandom.com/wiki/Lockpick'>ganzúa</a>."
+  },
+  {
+    "id": 14,
+    "name": "Caja de recursos bloqueada",
+    "description": "En las cajas de recursos bloqueadas podrás encontrar materiales y si tienes suerte objetos más valiosos como el <a target='_blank' href='https://marauders.fandom.com/wiki/Blow_Torch'>soplete</a>. Para abrirla tendrás que usar una <a target='_blank' href='https://marauders.fandom.com/wiki/Lockpick'>ganzúa</a>."
+  },
+  {
+    "id": 15,
+    "name": "Caja de recursos bloqueada",
+    "description": "En las cajas de recursos bloqueadas podrás encontrar materiales y si tienes suerte objetos más valiosos como el <a target='_blank' href='https://marauders.fandom.com/wiki/Blow_Torch'>soplete</a>. Para abrirla tendrás que usar una <a target='_blank' href='https://marauders.fandom.com/wiki/Lockpick'>ganzúa</a>."
+  },
+  {
+    "id": 16,
+    "name": "Botiquín",
+    "description": "En él puedes encontrar cualquier objeto <a target='_blank' href='https://marauders.fandom.com/wiki/Consumables'>consumible</a>, ya sea para aumentar la <a target='_blank' href='https://marauders.fandom.com/wiki/Health'>salud</a>, reducir el dolor, o reducir la <a target='_blank' href='https://marauders.fandom.com/wiki/Stamina'>fatiga</a>. También puedes encontrar algo de <a target='_blank' href='https://marauders.fandom.com/wiki/Disinfectant'>desinfectante</a>, un objeto que te facilitará la fabricación de <a target='_blank' href='https://marauders.fandom.com/wiki/Small_First_Aid'>botiquines pequeños de primeros auxilios</a>."
+  },
+  {
+    "id": 17,
+    "name": "Botiquín",
+    "description": "En él puedes encontrar cualquier objeto <a target='_blank' href='https://marauders.fandom.com/wiki/Consumables'>consumible</a>, ya sea para aumentar la <a target='_blank' href='https://marauders.fandom.com/wiki/Health'>salud</a>, reducir el dolor, o reducir la <a target='_blank' href='https://marauders.fandom.com/wiki/Stamina'>fatiga</a>. También puedes encontrar algo de <a target='_blank' href='https://marauders.fandom.com/wiki/Disinfectant'>desinfectante</a>, un objeto que te facilitará la fabricación de <a target='_blank' href='https://marauders.fandom.com/wiki/Small_First_Aid'>botiquines pequeños de primeros auxilios</a>."
+  },
+  {
+    "id": 18,
+    "name": "Botiquín",
+    "description": "En él puedes encontrar cualquier objeto <a target='_blank' href='https://marauders.fandom.com/wiki/Consumables'>consumible</a>, ya sea para aumentar la <a target='_blank' href='https://marauders.fandom.com/wiki/Health'>salud</a>, reducir el dolor, o reducir la <a target='_blank' href='https://marauders.fandom.com/wiki/Stamina'>fatiga</a>. También puedes encontrar algo de <a target='_blank' href='https://marauders.fandom.com/wiki/Disinfectant'>desinfectante</a>, un objeto que te facilitará la fabricación de <a target='_blank' href='https://marauders.fandom.com/wiki/Small_First_Aid'>botiquines pequeños de primeros auxilios</a>."
+  },
+  {
+    "id": 19,
+    "name": "Botiquín",
+    "description": "En él puedes encontrar cualquier objeto <a target='_blank' href='https://marauders.fandom.com/wiki/Consumables'>consumible</a>, ya sea para aumentar la <a target='_blank' href='https://marauders.fandom.com/wiki/Health'>salud</a>, reducir el dolor, o reducir la <a target='_blank' href='https://marauders.fandom.com/wiki/Stamina'>fatiga</a>. También puedes encontrar algo de <a target='_blank' href='https://marauders.fandom.com/wiki/Disinfectant'>desinfectante</a>, un objeto que te facilitará la fabricación de <a target='_blank' href='https://marauders.fandom.com/wiki/Small_First_Aid'>botiquines pequeños de primeros auxilios</a>."
+  },
+  {
+    "id": 20,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 21,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 22,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 23,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 24,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 25,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 26,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 27,
+    "name": "Taquilla"
+  },
+  {
+    "id": 28,
+    "name": "Taquilla"
+  },
+  {
+    "id": 29,
+    "name": "Taquilla"
+  },
+  {
+    "id": 30,
+    "name": "Archivador"
+  },
+  {
+    "id": 31,
+    "name": "Caja verde grande"
+  },
+  {
+    "id": 32,
+    "name": "Taquilla"
+  },
+  {
+    "id": 33,
+    "name": "Contenedor grande"
+  },
+  {
+    "id": 34,
+    "name": "Prisioneros de Guerra",
+    "description": "'Las fuerzas del Imperio Central han sido capturadas y detenidas en algunas de las colonias penales de la UA, encuentra y examina el manifiesto de prisioneros de su jefe de seguridad para poder localizarlos'. Interactúa con el Manifiesto de Prisioneros durante 3 segundos"
+  },
+  {
+    "id": 35,
+    "name": "Fuga de la prisión",
+    "description": "La Armería de la Colonia Penal se encuentra en la tercera planta del complejo, accesible únicamente por la torre central. Es la zona que constituyen las taquillas y la entrada a la <a target='_blank' href='https://marauders.fandom.com/wiki/Vault'>bóveda</a>, cerca de la Oficina Principal de Seguridad y del Puesto de Control. Permanecer allí 2 minutos."
+  },
+  {
+    "id": 36,
+    "name": "Cadáver",
+    "description": "En ellos puedes encontrar objetos de valor, como la <a target='_blank' href='https://marauders.fandom.com/wiki/Penal_Colony_Token'>llave de la prisión</a>."
+  },
+  {
+    "id": 37,
+    "name": "Almacén",
+    "description": "En él puedes encontrar objetos de valor. Se encuentra entre dos pasillos estrechos, cerca de la biblioteca y de los detectores de metales. Para abrirlo necesitas usar la <a target='_blank' href='https://marauders.fandom.com/wiki/Penal_Colony_Token'>llave de la prisión</a>. "
+  },
+  {
+    "id": 38,
+    "name": "Monedero",
+    "description": "En él puedes encontrar objetos de valor como monedas: <a target='_blank' href='https://marauders.fandom.com/wiki/Copper_Coin'>de cobre</a>, <a target='_blank' href='https://marauders.fandom.com/wiki/Silver_Coin'>de plata</a> y <a target='_blank' href='https://marauders.fandom.com/wiki/Gold_Coin'>de oro</a>, <a target='_blank' href='https://marauders.fandom.com/wiki/War_Bonds'>bonos de guerra</a>, <a target='_blank' href='https://marauders.fandom.com/wiki/Bank_Notes'>billetes</a> y anillos: <a target='_blank' href='https://marauders.fandom.com/wiki/Silver_Ring'>de plata</a> y <a target='_blank' href='https://marauders.fandom.com/wiki/Gold_Ring'>de oro</a>."
+  },
+  {
+    "id": 39,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 40,
+    "name": "Caja de Munición",
+    "description": "Puede contener munición de todo tipo de calibre, <a target='_blank' href='https://marauders.fandom.com/wiki/Ammo_Box'>cajas de munición</a>, y varios tipos de pólvora: <a target='_blank' href = 'https://marauders.fandom.com/wiki/Gunpowder'>pólvora normal</a> y <a target='_blank' href = 'https://marauders.fandom.com/wiki/Hi-Grade_Gunpowder'>pólvora de alto grado</a>."
+  },
+  {
+    "id": 41,
+    "name": "Cadáver",
+    "description": "En ellos puedes encontrar objetos de valor, como la <a target='_blank' href='https://marauders.fandom.com/wiki/Penal_Colony_Token'>llave de la prisión</a>."
+  },
+  {
+    "id": 42,
+    "name": "Archivador"
+  },
+  {
+    "id": 43,
+    "name": "Cadáveres",
+    "description": "En ellos puedes encontrar objetos de valor, como la <a target='_blank' href='https://marauders.fandom.com/wiki/Penal_Colony_Token'>llave de la prisión</a>."
+  },
+  {
+    "id": 44,
+    "name": "Archivador"
+  },
+  {
+    "id": 45,
+    "name": "Cadáver",
+    "description": "En ellos puedes encontrar objetos de valor, como la <a target='_blank' href='https://marauders.fandom.com/wiki/Penal_Colony_Token'>llave de la prisión</a>."
+  },
+  {
+    "id": 46,
+    "name": "Caja verde grande"
+  },
+  {
+    "id": 47,
+    "name": "Cadáveres",
+    "description": "En ellos puedes encontrar objetos de valor, como la <a target='_blank' href='https://marauders.fandom.com/wiki/Penal_Colony_Token'>llave de la prisión</a>."
+  },
+  {
+    "id": 48,
+    "name": "Archivador"
+  },
+  {
+    "id": 49,
+    "name": "Caja verde grande"
+  },
+  {
+    "id": 50,
+    "name": "Caja verde grande"
+  },
+  {
+    "id": 51,
+    "name": "Exclusa GYM - 4D",
+    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>exclusa de aire</a> permite escapar del mapa haciendo uso de la nave personal. Recuerda llevar contigo la <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>tarjeta de capitán</a> correcta."
+  },
+  {
+    "id": 52,
+    "name": "Interruptor de habitación segura 1",
+    "description": "Uno de los cuatro interruptores necesarios para liberar al <a target='_blank' href='https://marauders.fandom.com/wiki/Warden'>Warden</a>."
+  }
+]

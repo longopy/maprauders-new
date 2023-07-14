@@ -2,7 +2,7 @@
 import { LanguageIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { languages } from "@/app/i18n/settings";
+import { languages } from "@/i18n/settings";
 
 // @ts-ignore Parameter
 export default function LangSwitcherComponent({ lng }) {

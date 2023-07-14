@@ -4,7 +4,7 @@ import {
   ChevronRightIcon
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import "../../../styles/sidebar.css";
+import "@/styles/sidebar.css";
 
 export function SidebarComponent({ component }: { component: React.ReactNode}) {
   const [collapsed, setSidebarCollapsed] = useState(true);

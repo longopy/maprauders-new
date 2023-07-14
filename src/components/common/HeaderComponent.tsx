@@ -1,23 +1,12 @@
 "use client";
-import AppLogoComponent from "@/app/components/common/AppLogoComponent";
+import AppLogoComponent from "@/components/common/AppLogoComponent";
 import Link from "next/link";
 import { useState } from "react";
-import { useTranslation } from "@/app/i18n/client";
-import ThemeSwitcherComponent from "@/app/components/common/ThemeSwitcherComponent";
-import LangSwitcherComponent from "@/app/components/common/LangSwitcherComponent";
+import { useTranslation } from "@/i18n/client";
+import ThemeSwitcherComponent from "@/components/common/ThemeSwitcherComponent";
+import LangSwitcherComponent from "@/components/common/LangSwitcherComponent";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-
-
-const links = [
-  {
-    id: "maps",
-    route: "/maps",
-  },
-  {
-    id: "about",
-    route: "/about",
-  },
-];
+import { links } from "@/config/params";
 
 export function HeaderComponent({ lng, themeSwitcher }: { lng: string, themeSwitcher: boolean }) {
   const { t } = useTranslation(lng);

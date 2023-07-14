@@ -1,26 +1,28 @@
-import { HeaderComponent } from "@/app/components/common/HeaderComponent";
-import { MapComponent } from "@/app/components/map/MapComponent";
-import { SidebarComponent } from "@/app/components/common/SidebarComponent";
-import { TagSelectorComponent } from "@/app/components/map/TagSelectorComponent";
-import categoriesConfig from "@/app/config/categories.json";
+import { getCategoriesFilteredAndCounted } from "@/app/_actions/category";
+import { getPoints } from "@/app/_actions/point";
+import { HeaderComponent } from "@/components/common/HeaderComponent";
+import { SidebarComponent } from "@/components/common/SidebarComponent";
+import { MapComponent } from "@/components/map/MapComponent";
+import { TagSelectorComponent } from "@/components/map/TagSelectorComponent";
+import { Point } from "@/app/_actions/point";
+import { OutputCategory } from "@/app/_actions/category";
 
 // @ts-ignore: Params
-export default function MapPage({ params }) {
+export default async function MapPage({ params }) {
   const { lng, id } = params;
-  let categories: Array<object> = []
-  categoriesConfig.map((categoryItem: any) => {
-    let tags: Array<object> = [];
-    categoryItem["tags"].map((tagItem: any) => {
-      tags.push({'id': tagItem, 'qty': 10});
-    });
-    categories.push({id: categoryItem["id"], color: categoryItem["color"], tags: tags});
-  });
+  const mapPoints: Point[] = await getPoints(id);
+  const categories: OutputCategory[] = await getCategoriesFilteredAndCounted(
+    id,
+    mapPoints
+  );
   return (
     <div>
       <div className="fixed z-20 w-full">
         <HeaderComponent lng={lng} themeSwitcher={false} />
       </div>
-      <SidebarComponent component={<TagSelectorComponent categories={categories} lng={lng} />} />
+      <SidebarComponent
+        component={<TagSelectorComponent categories={categories} lng={lng} />}
+      />
       <MapComponent
         zoom={-2}
         minZoom={-2}

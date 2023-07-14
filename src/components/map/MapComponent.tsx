@@ -1,10 +1,10 @@
 "use client";
 
-import { ImageLayerComponent } from "@/app/components/map/ImageLayerComponent";
+import { ImageLayerComponent } from "@/components/map/ImageLayerComponent";
 import { CRS, LatLng, latLngBounds } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, ZoomControl } from "react-leaflet";
-import "../../../styles/map.css";
+import "@/styles/map.css";
 
 export function MapComponent({
   zoom,

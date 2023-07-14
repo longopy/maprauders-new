@@ -3,7 +3,7 @@ import { LatLng, latLngBounds } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import SVG from 'react-inlinesvg';
 import { SVGOverlay, useMap } from "react-leaflet";
-import "../../../styles/map.css";
+import "@/styles/map.css";
 
 
 export function ImageLayerComponent({

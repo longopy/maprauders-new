@@ -1,6 +1,6 @@
 "use client";
-import { TagComponent } from "@/app/components/categories/TagComponent";
-import { CategoryComponent } from '@/app/components/categories/CategoryComponent';
+import { TagComponent } from "@/components/categories/TagComponent";
+import { CategoryComponent } from '@/components/categories/CategoryComponent';
 export function TagSelectorComponent({
 categories,
   lng,

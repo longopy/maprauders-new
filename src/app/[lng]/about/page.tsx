@@ -1,4 +1,4 @@
-import { HeaderComponent } from "@/app/components/common/HeaderComponent";
+import { HeaderComponent } from "@/components/common/HeaderComponent";
 
 // @ts-ignore params
 export default function AboutPage({ params }) {

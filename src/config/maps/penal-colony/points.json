@@ -2,308 +2,361 @@
   {
     "id": 0,
     "resource": "airlock_gym_4d.png",
+    "category": "extraction",
     "tag": "airlock",
     "position": [-20.02247058579168, 74.00713406878067]
   },
   {
     "id": 1,
     "resource": "airlock_visit_5d.png",
+    "category": "extraction",
     "tag": "airlock",
     "position": [-63.31436432422991, 46.63485744996686]
   },
   {
     "id": 2,
     "resource": "airlock_canteen_3c.png",
+    "category": "extraction",
     "tag": "airlock",
     "position": [-94.55531409976264, 26.12727167855549]
   },
   {
     "id": 3,
     "resource": "airlock_workshop_2b.png",
+    "category": "extraction",
     "tag": "airlock",
     "position": [-35.2846644975, -65.84754557543042]
   },
   {
     "id": 4,
     "resource": "airlock_library_1a.png",
+    "category": "extraction",
     "tag": "airlock",
     "position": [39.22444810124829, 31.052705082355573]
   },
   {
     "id": 5,
     "resource": "escape_pod.png",
+    "category": "extraction",
     "tag": "escape_pod",
     "position": [73.99366102406464, 35.92801300957194]
   },
   {
     "id": 6,
     "resource": "escape_pod.png",
+    "category": "extraction",
     "tag": "escape_pod",
     "position": [-19.74119002159602, 36.023257874580445]
   },
   {
     "id": 7,
     "resource": "hidden_stash_canteen.png",
+    "category": "loot",
     "tag": "hidden_stash",
     "position": [-42.3232736165151, -3.844005500370308]
   },
   {
     "id": 8,
     "resource": "hidden_stash_visitation.png",
+    "category": "loot",
     "tag": "hidden_stash",
     "position": [-50.13572837435984, 45.30044487554489]
   },
   {
     "id": 9,
     "resource": "hidden_stash_cells.png",
+    "category": "loot",
     "tag": "hidden_stash",
     "position": [65.8863561909403, -16.685600324733667]
   },
   {
     "id": 10,
     "resource": "vault.png",
+    "category": "loot",
     "tag": "vault",
     "position": [61.84225731920547, -28.497135964741357]
   },
   {
     "id": 11,
     "resource": "blocked_access_maintenance1.png",
+    "category": "loot",
     "tag": "blocked_access",
     "position": [20.036535251591374, 4.210850966206042]
   },
   {
     "id": 12,
     "resource": "blocked_access_maintenance2.png",
+    "category": "loot",
     "tag": "blocked_access",
     "position": [-55.49166318309706, 6.297013601974205]
   },
   {
     "id": 13,
     "resource": "blocked_resource_box_escape_pod.jpg",
+    "category": "loot",
     "tag": "blocked_resource_box",
     "position": [-18.53077708069911, 31.515975396193674]
   },
   {
     "id": 14,
     "resource": "blocked_resource_box_escape_pod.jpg",
+    "category": "loot",
     "tag": "blocked_resource_box",
     "position": [75.17580568554031, 31.17797172152834]
   },
   {
     "id": 15,
     "resource": "blocked_resource_box_central_tower.jpg",
+    "category": "loot",
     "tag": "blocked_resource_box",
     "position": [-17.567944429058386, 4.1547513351669565]
   },
   {
     "id": 16,
+    "category": "loot",
     "tag": "medic_kit",
     "position": [-36.00953244117922, -19.77165666443532]
   },
   {
     "id": 17,
     "resource": "medic_kit_gym.jpg",
+    "category": "loot",
     "tag": "medic_kit",
     "position": [-30.15155536659083, 44.21997259396159]
   },
   {
     "id": 18,
+    "category": "loot",
     "tag": "medic_kit",
     "position": [15.485670894176138, 6.214132166573197]
   },
   {
     "id": 19,
     "resource": "medic_kit_personal1.jpg",
+    "category": "loot",
     "tag": "medic_kit",
     "position": [-51.594974381828514, 6.289502289614088]
   },
   {
     "id": 20,
+    "category": "loot",
     "tag": "ammo",
     "position": [-55.207747781026484, 8.501231244348977]
   },
   {
     "id": 21,
+    "category": "loot",
     "tag": "ammo",
     "position": [59.28174971707392, -18.121404830352]
   },
   {
     "id": 22,
+    "category": "loot",
     "tag": "ammo",
     "position": [79.05102321367524, -29.079774159289677]
   },
   {
     "id": 23,
     "resource": "ammo_large_green_box_library.jpg",
+    "category": "loot",
     "tag": "ammo",
     "position": [34.71634155550814, 7.581223333595003]
   },
   {
     "id": 24,
+    "category": "loot",
     "tag": "ammo",
     "position": [12.969045352149521, 8.382651820637824]
   },
   {
     "id": 25,
     "resource": "ammo_security_red.jpg",
+    "category": "loot",
     "tag": "ammo",
     "position": [15.549245133894315, 30.230795734461157]
   },
   {
     "id": 26,
     "resource": "ammo_security.jpg",
+    "category": "loot",
     "tag": "ammo",
     "position": [-57.17308229520255, 34.2983074671014]
   },
   {
     "id": 27,
     "resource": "locker_gym2.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [-30.126046003186723, 46.08885074442652]
   },
   {
     "id": 28,
     "resource": "locker_gym1.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [-35.371902583795304, 49.08307397746196]
   },
   {
     "id": 29,
     "resource": "locker_visitation.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [-44.753249580790715, 39.692952271680625]
   },
   {
     "id": 30,
     "resource": "file_cabinet_security.png",
+    "category": "loot",
     "tag": "container",
     "position": [-16.519659880393643, -18.378501103181005]
   },
   {
     "id": 31,
     "resource": "ammo_large_green_box_library.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [34.59580796550388, 7.556492444942318]
   },
   {
     "id": 32,
+    "category": "loot",
     "tag": "container",
     "position": [67.92934795279123, -26.37744559605137]
   },
   {
     "id": 33,
+    "category": "loot",
     "tag": "container",
     "position": [74.70976518, 3.225994897672205]
   },
   {
     "id": 34,
     "resource": "mission_prisioners_of_war.png",
+    "category": "mission",
     "tag": "faction_mission",
     "position": [78.92751634019716, -29.400468026214277]
   },
   {
     "id": 35,
     "resource": "mission_prison_break.png",
+    "category": "mission",
     "tag": "faction_mission",
     "position": [62.94025744728154, -27.605141214567457]
   },
   {
     "id": 36,
+    "category": "loot",
     "tag": "dead_body",
     "position": [74.16398448476002, -27.777955375980127]
   },
   {
     "id": 37,
     "resource": "depot.png",
+    "category": "loot",
     "tag": "depot",
     "position": [-2.2779431291934795, 35.88531094201322]
   },
   {
     "id": 38,
     "resource": "purse_security.jpg",
+    "category": "loot",
     "tag": "purse",
     "position": [-53.87533496294963, 33.047843939116866]
   },
   {
     "id": 39,
     "resource": "ammo_central_tower.jpg",
+    "category": "loot",
     "tag": "ammo",
     "position": [-22.483645120053893, 9.408885944803764]
   },
   {
     "id": 40,
+    "category": "loot",
     "tag": "ammo",
     "position": [70.38402422286745, 5.464573691097243]
   },
   {
     "id": 41,
     "resource": "dead_body_security_red.jpg",
+    "category": "loot",
     "tag": "dead_body",
     "position": [18.14244222593537, 37.5496780592663]
   },
   {
     "id": 42,
     "resource": "file_cabinet_personal1.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [-52.87648526510657, 6.265714787528495]
   },
   {
     "id": 43,
     "resource": "dead_body_library.jpg",
+    "category": "loot",
     "tag": "dead_body",
     "position": [16.744552621436554, 13.397770382520411]
   },
   {
     "id": 44,
     "resource": "file_cabinet_security_red.png",
+    "category": "loot",
     "tag": "container",
     "position": [19.36402145997023, 32.6908159498476]
   },
   {
     "id": 45,
     "resource": "dead_body_dorms.png",
+    "category": "loot",
     "tag": "dead_body",
     "position": [5.948764571705706, -20.12109721355985]
   },
   {
     "id": 46,
     "resource": "large_green_box_security.png",
+    "category": "loot",
     "tag": "container",
     "position": [-13.05076983329127, -18.546938920767374]
   },
   {
     "id": 47,
     "resource": "dead_body_near_depot.png",
+    "category": "loot",
     "tag": "dead_body",
     "position": [-13.921528870861962, 36.60325016970574]
   },
   {
     "id": 48,
     "resource": "blocked_resource_box_central_tower.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [-17.884625123328572, 4.274854995867592]
   },
   {
     "id": 49,
     "resource": "large_green_box_security_red.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [19.067257037201433, 32.37204096248071]
   },
   {
     "id": 50,
     "resource": "large_green_box_security2.jpg",
+    "category": "loot",
     "tag": "container",
     "position": [-60.759175704233016, 33.5805046091757]
   },
   {
     "id": 51,
     "resource": "airlock_gym_4d.png",
+    "category": "extraction",
     "tag": "airlock",
     "position": [-20.02247058579168, 74.00713406878067]
   },
   {
     "id": 52,
     "resource": "safe_room_switch1.jpg",
+    "category": "mission",
     "tag": "faction_mission",
     "position": [-57.53733863106257, 34.67444926940943]
   }

@@ -1,0 +1,146 @@
+[
+  {
+    "id": 0,
+    "name": "Nivel 0"
+  },
+  {
+    "id": 1,
+    "name": "Nivel 1"
+  },
+  {
+    "id": 2,
+    "name": "Nivel 2"
+  },
+  {
+    "id": 3,
+    "name": "Nivel 3"
+  },
+  {
+    "id": 4,
+    "name": "CANTINA"
+  },
+  {
+    "id": 5,
+    "name": "COCINA"
+  },
+  {
+    "id": 6,
+    "name": "SEGURIDAD"
+  },
+  {
+    "id": 7,
+    "name": "VISITAS"
+  },
+  {
+    "id": 8,
+    "name": "GYM"
+  },
+  {
+    "id": 9,
+    "name": "TAQUILLAS GYM"
+  },
+  {
+    "id": 10,
+    "name": "PERSONAL"
+  },
+  {
+    "id": 11,
+    "name": "PERSONAL"
+  },
+  {
+    "id": 12,
+    "name": "SEGURIDAD"
+  },
+  {
+    "id": 13,
+    "name": "BIBLIOTECA"
+  },
+  {
+    "id": 14,
+    "name": "UTILIDADES"
+  },
+  {
+    "id": 15,
+    "name": "DORMITORIOS"
+  },
+  {
+    "id": 16,
+    "name": "SEGURIDAD"
+  },
+  {
+    "id": 17,
+    "name": "MOLINO\n PRINCIPAL"
+  },
+  {
+    "id": 18,
+    "name": "MOLINO\nSECUNDARIO"
+  },
+  {
+    "id": 19,
+    "name": "LAVANDERÍA"
+  },
+  {
+    "id": 20,
+    "name": "PUNTO DE CONTROL"
+  },
+  {
+    "id": 21,
+    "name": "OFICINA CENTRAL\nSEGURIDAD"
+  },
+  {
+    "id": 22,
+    "name": "LITERAS"
+  },
+  {
+    "id": 23,
+    "name": "DESCANSO"
+  },
+  {
+    "id": 24,
+    "name": "LITERAS"
+  },
+  {
+    "id": 25,
+    "name": "TAQUILLAS\nPERSONAL"
+  },
+  {
+    "id": 26,
+    "name": "TORRE CENTRAL"
+  },
+  {
+    "id": 27,
+    "name": "TORRE CENTRAL"
+  },
+  {
+    "id": 28,
+    "name": "BLOQUE DE CELDAS\n NIVEL 3"
+  },
+  {
+    "id": 29,
+    "name": "BLOQUE DE CELDAS\n NIVEL 1"
+  },
+  {
+    "id": 30,
+    "name": "BLOQUE DE CELDAS\n NIVEL 2"
+  },
+  {
+    "id": 31,
+    "name": "TALLER"
+  },
+  {
+    "id": 32,
+    "name": "CANTINA"
+  },
+  {
+    "id": 33,
+    "name": "VISITAS"
+  },
+  {
+    "id": 34,
+    "name": "GYM"
+  },
+  {
+    "id": 35,
+    "name": "LLEGADAS"
+  }
+]

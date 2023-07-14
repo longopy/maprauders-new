@@ -1,10 +1,11 @@
 import Link from "next/link";
-import MapCardComponent from "@/app/components/maps/MapCardComponent";
+import MapCardComponent from "@/components/maps/MapCardComponent";
 import { promises as fs } from "fs";
-import { HeaderComponent } from '@/app/components/common/HeaderComponent';
+import { HeaderComponent } from '@/components/common/HeaderComponent';
+import {configPathI18n} from "@/config/params";
 
 const fetchItems = (lng: string) => {
-  return fs.readFile(`src/app/i18n/locales/${lng}/menu.json`).then((res) => {
+  return fs.readFile(`${configPathI18n}/${lng}/menu.json`).then((res) => {
     return JSON.parse(res.toString());
   });
 };

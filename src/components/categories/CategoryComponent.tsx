@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "@/app/i18n/client";
+import { useTranslation } from "@/i18n/client";
 import SVG from "react-inlinesvg";
 
 
