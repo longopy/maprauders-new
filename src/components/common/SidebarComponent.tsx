@@ -16,11 +16,11 @@ export function SidebarComponent({ component }: { component: React.ReactNode}) {
       <div
         className="w-sidebar z-10 border-r border-accent h-full bg-dark overflow-y-auto"
       >
-        <div className="mt-24">
+        <div className="mt-5">
           {component}
         </div>
       </div>
-      <div className="mt-24 text-white z-20">
+      <div className="mt-5 text-white z-20">
         <button
           className="bg-dark pl-1 pr-2 py-3 border-accent border-l-0 border rounded-r-lg scale-105 group"
           onClick={() => setSidebarCollapsed((prev) => !prev)}

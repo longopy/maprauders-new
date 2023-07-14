@@ -7,12 +7,14 @@
   /* Your default theme */
   --background-color: white;
   --foreground-color: black;
+  --accent: rgb(56, 189, 248);
 }
 
 .dark {
   /* Your dark theme */
   --background-color: --dark-accent;
   --foreground-color: white;
+  --accent: rgb(56, 189, 248);
 }
 
 .dark body {
@@ -33,4 +35,14 @@ html {
   font-smooth: auto;
   height: auto;
   min-height: 100%;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--accent);
+}
+
+::selection {
+  color: white;
+  background: var(--accent);
 }

@@ -39,7 +39,7 @@ export function HeaderComponent({ lng, themeSwitcher }: { lng: string, themeSwit
           {links.map(({ id, route }) => (
             <span
               key={route}
-              className="block mt-6 lg:inline-block lg:mt-0 text-white-200 mr-6 align-middle lg:mt0 text-base text-light hover:text-accent font-medium underline-none hover:underline-offset-8 hover:underline"
+              className="header block mt-6 lg:inline-block lg:mt-0 text-white-200 mr-6 align-middle lg:mt0 text-base text-light hover:text-accent font-medium underline-none hover:underline-offset-8 hover:underline"
             >
               <Link href={`/${lng}${route}`} >
                 {headers[id]}

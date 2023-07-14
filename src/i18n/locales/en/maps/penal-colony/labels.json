@@ -1,0 +1,148 @@
+[
+  {
+    "id": 0,
+    "title": "Level 0"
+  },
+  {
+    "id": 1,
+    "title": "Level 1"
+  },
+  {
+    "id": 2,
+    "title": "Level 2"
+  },
+  {
+    "id": 3,
+    "title": "Level 3"
+  },
+  {
+    "id": 4,
+    "title": "CANTEEN"
+  },
+  {
+    "id": 5,
+    "title": "KITCHEN"
+  },
+  {
+    "id": 6,
+    "title": "SECURITY"
+  },
+  {
+    "id": 7,
+    "title": "VISITATION"
+  },
+  {
+    "id": 8,
+    "title": "GYM"
+  },
+  {
+    "id": 9,
+    "title": "GYM LOCKERS"
+  },
+  {
+    "id": 10,
+    "title": "STAFF"
+  },
+  {
+    "id": 11,
+    "title": "STAFF"
+  },
+  {
+    "id": 12,
+    "title": "SECURITY"
+  },
+  {
+    "id": 13,
+    "title": "LIBRARY"
+  },
+  {
+    "id": 14,
+    "title": "UTILITY"
+  },
+  {
+    "id": 15,
+    "title": "DORMS"
+  },
+  {
+    "id": 16,
+    "title": "SECURITY"
+  },
+  {
+    "id": 17,
+    "title": "MAIN MILL"
+  },
+  {
+    "id": 18,
+    "title": "SIDE MILL"
+  },
+  {
+    "id": 19,
+    "title": "LAUNDRY"
+  },
+  {
+    "id": 20,
+    "title": "CHECKPOINT"
+  },
+  {
+    "id": 21,
+    "title": "HEAD SEC OFFICE"
+  },
+  {
+    "id": 22,
+    "title": "BUNKS"
+  },
+  {
+    "id": 23,
+    "title": "BREAK"
+  },
+  {
+    "id": 24,
+    "title": "BUNKS"
+  },
+  {
+    "id": 25,
+    "title": "STAFF LOCKERS"
+  },
+  {
+    "id": 26,
+    "title": "CENTRAL TOWER"
+  },
+  {
+    "id": 27,
+    "title": "CENTRAL TOWER"
+  },
+  {
+    "id": 28,
+    "title": "CELL BLOCK\nLEVEL 3"
+  },
+  {
+    "id": 29,
+    "title": "CELL BLOCK\nLEVEL 1"
+  },
+  {
+    "id": 30,
+    "title": "CELL BLOCK\nLEVEL 2"
+  },
+  {
+    "id": 31,
+    "title": "WORKSHOP"
+  },
+  {
+    "id": 32,
+    "title": "CANTEEN"
+  },
+  {
+    "id": 33,
+    "title": "VISITATION"
+  },
+  {
+    "id": 34,
+    "title": "GYM"
+  },
+  {
+    "id": 35,
+    "title": "ARRIVALS"
+  }
+]
+
+

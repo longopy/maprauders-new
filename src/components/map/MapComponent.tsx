@@ -1,18 +1,28 @@
 "use client";
 
+import { MapPoint } from "@/app/_actions/point";
 import { ImageLayerComponent } from "@/components/map/ImageLayerComponent";
-import { CRS, LatLng, latLngBounds } from "leaflet";
-import "leaflet/dist/leaflet.css";
-import { MapContainer, ZoomControl } from "react-leaflet";
 import "@/styles/map.css";
+import { CRS, LatLng, latLngBounds, point } from "leaflet";
+import "leaflet/dist/leaflet.css";
+import { MapContainer, Marker, Popup, ZoomControl, useMapEvents } from "react-leaflet";
+import { MarkerComponent } from "@/components/map/MarkerComponent";
+
+const generateMarkers = (points: MapPoint[]) => {
+  return points.map((point: MapPoint) => (
+    <MarkerComponent key={`marker-${point.id}`} point={point} />
+  ));
+};
 
 export function MapComponent({
+  points,
   zoom,
   minZoom,
   padding,
   imageDimensions,
   imagePath,
 }: {
+  points: MapPoint[];
   zoom: number;
   minZoom: number;
   padding: Array<number>;
@@ -31,22 +41,23 @@ export function MapComponent({
     ),
   ]);
   return (
-      <MapContainer
-        crs={CRS.Simple}
-        zoom={zoom}
-        minZoom={minZoom}
-        center={center}
-        scrollWheelZoom={false}
-        zoomControl={false}
-        attributionControl={false}
-        maxBounds={imageBounds}
-        doubleClickZoom={false}
-      >
-        <ZoomControl position={"bottomright"} />
-        <ImageLayerComponent
-          imageDimensions={imageDimensions}
-          imagePath={imagePath}
-        />
-      </MapContainer>
+    <MapContainer
+      crs={CRS.Simple}
+      zoom={zoom}
+      minZoom={minZoom}
+      center={center}
+      scrollWheelZoom={false}
+      zoomControl={false}
+      attributionControl={false}
+      maxBounds={imageBounds}
+      doubleClickZoom={false}
+    >
+      <ZoomControl position={"bottomright"} />
+      <ImageLayerComponent
+        imageDimensions={imageDimensions}
+        imagePath={imagePath}
+      />
+      {generateMarkers(points)}
+    </MapContainer>
   );
 }

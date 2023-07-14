@@ -1,10 +1,9 @@
 .leaflet-container {
   width: 100wh;
-  height: 100vh;
+  height: calc(100vh - 7em);
   z-index: 1;
   @apply bg-gradient-to-t from-sky-900 to-dark;
 }
-
 
 .leaflet-control-zoom {
   @apply scale-110 !important;
@@ -21,13 +20,57 @@
 
 .leaflet-control-zoom-in > span,
 .leaflet-control-zoom-out > span {
-  color: white;
+  color: white !important;
 }
 
 .leaflet-disabled {
-  @apply hover:bg-dark !important;
+  @apply hover:bg-dark;
 }
 
 .leaflet-disabled > span {
-  color: gray !important;
+  color: gray;
+}
+
+.leaflet-grab {
+  cursor: auto;
+}
+
+.leaflet-dragging .leaflet-grab {
+  cursor: move;
+}
+
+.popup > a, .tooltip > a {
+  color: var(--color-accent);
+}
+
+.popup * a:hover, .tooltip * a:hover {
+  text-decoration: underline;
+}
+
+.tooltip,
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  @apply bg-dark;
+  @apply text-white;
+  @apply border border-accent;
+  @apply opacity-95;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply bg-dark;
+  @apply text-white;
+}
+
+.leaflet-popup-close-button {
+  @apply m-2;
+  @apply text-white !important;
+  @apply hover:text-accent !important;
+  @apply opacity-95 !important;
+}
+
+.leaflet-tooltip-left::before {
+  @apply border-l-accent;
+}
+.leaflet-tooltip-right::before {
+  @apply border-r-accent;
 }
