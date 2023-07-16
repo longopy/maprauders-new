@@ -5,7 +5,7 @@ import SVG from "react-inlinesvg";
 import { SVGOverlay, useMap, useMapEvents } from "react-leaflet";
 import "@/styles/map.css";
 
-export function ImageLayerComponent({
+export function ImageLayer({
   imageDimensions,
   imagePath,
 }: {

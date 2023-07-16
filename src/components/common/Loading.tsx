@@ -11,7 +11,7 @@ const links = [
   },
 ];
 
-export function LoadingComponent() {
+export function Loading() {
   return (
     <div
       className="absolute bg-dark bg-opacity-80 h-full w-full flex justify-center items-center"

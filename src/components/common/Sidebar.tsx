@@ -6,7 +6,7 @@ import {
 import { useState } from "react";
 import "@/styles/sidebar.css";
 
-export function SidebarComponent({ component }: { component: React.ReactNode}) {
+export function Sidebar({ component }: { component: React.ReactNode}) {
   const [collapsed, setSidebarCollapsed] = useState(true);
   return (
     <div

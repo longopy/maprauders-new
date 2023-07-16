@@ -2,7 +2,7 @@
 import { useTranslation } from "@/i18n/client";
 import SVG from "react-inlinesvg";
 
-export function TagComponent({
+export function Tag({
   id,
   qty,
   lng,

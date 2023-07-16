@@ -3,7 +3,7 @@ import { useTranslation } from "@/i18n/client";
 import SVG from "react-inlinesvg";
 
 
-export function CategoryComponent({ id, lng }: { id: string; lng: string }) {
+export function Category({ id, lng }: { id: string; lng: string }) {
   const { t } = useTranslation(lng, "categories");
   const iconSrc: string = `/images/icons/categories/${id}.svg`;
   const text: string = t(id);

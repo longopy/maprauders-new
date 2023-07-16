@@ -1,6 +1,6 @@
 .leaflet-container {
   width: 100wh;
-  height: calc(100vh - 7em);
+  height: calc(100vh - 6.3em);
   z-index: 1;
   @apply bg-gradient-to-t from-sky-900 to-dark;
 }
@@ -66,6 +66,7 @@
   @apply text-white !important;
   @apply hover:text-accent !important;
   @apply opacity-95 !important;
+  @apply text-2xl !important;
 }
 
 .leaflet-tooltip-left::before {
@@ -73,4 +74,16 @@
 }
 .leaflet-tooltip-right::before {
   @apply border-r-accent;
+}
+
+.leaflet-popup-content {
+  @apply m-0;
+}
+
+.popup-card{
+  min-width: 350px;
+}
+
+.leaflet-marker-icon:not(:hover) {
+  z-index: 0 !important;
 }

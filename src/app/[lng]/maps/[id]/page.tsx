@@ -1,11 +1,9 @@
-import { getCategoriesFilteredAndCounted } from "@/app/_actions/category";
-import { MapPoint, getMapPoints, getPoints } from "@/app/_actions/point";
-import { HeaderComponent } from "@/components/common/HeaderComponent";
-import { SidebarComponent } from "@/components/common/SidebarComponent";
-import { MapComponent } from "@/components/map/MapComponent";
-import { TagSelectorComponent } from "@/components/map/TagSelectorComponent";
-import { Point } from "@/app/_actions/point";
-import { OutputCategory } from "@/app/_actions/category";
+import { OutputCategory, getCategoriesFilteredAndCounted } from "@/app/_actions/category";
+import { MapPoint, Point, getMapPoints, getPoints } from "@/app/_actions/point";
+import { Header } from "@/components/common/Header";
+import { Sidebar } from "@/components/common/Sidebar";
+import { Map } from "@/components/map/Map";
+import { TagSelector } from "@/components/map/TagSelector";
 
 // @ts-ignore: Params
 export default async function MapPage({ params }) {
@@ -18,13 +16,13 @@ export default async function MapPage({ params }) {
   const mapPoints: MapPoint[] = await getMapPoints(points, id, lng);
   return (
     <div>
-      <HeaderComponent lng={lng} themeSwitcher={false} />
-      <SidebarComponent
-        component={<TagSelectorComponent categories={categories} lng={lng} />}
-      />
+      <Header lng={lng} themeSwitcher={false} />
+      <Sidebar component={<TagSelector categories={categories} lng={lng} />} />
       <div className="h-full">
-        <MapComponent
+        <Map
+          lng={lng}
           points={mapPoints}
+          // TODO: load data from config map file
           zoom={-2}
           minZoom={-2}
           padding={[600, 600]}

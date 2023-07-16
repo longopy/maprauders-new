@@ -1,14 +1,14 @@
 "use client";
-import AppLogoComponent from "@/components/common/AppLogoComponent";
+import AppLogo from "@/components/common/AppLogo";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "@/i18n/client";
-import ThemeSwitcherComponent from "@/components/common/ThemeSwitcherComponent";
-import LangSwitcherComponent from "@/components/common/LangSwitcherComponent";
+import ThemeSwitcher from "@/components/common/ThemeSwitcher";
+import LangSwitcher from "@/components/common/LangSwitcher";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { links } from "@/config/params";
 
-export function HeaderComponent({ lng, themeSwitcher }: { lng: string, themeSwitcher: boolean }) {
+export function Header({ lng, themeSwitcher }: { lng: string, themeSwitcher: boolean }) {
   const { t } = useTranslation(lng);
   const headers: any = t("headers", { returnObjects: true });
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ export function HeaderComponent({ lng, themeSwitcher }: { lng: string, themeSwit
         href="/"
         className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72"
       >
-        <AppLogoComponent />
+        <AppLogo />
       </Link>
       <div className="block lg:hidden">
         <button
@@ -48,8 +48,8 @@ export function HeaderComponent({ lng, themeSwitcher }: { lng: string, themeSwit
           ))}
         </div>
         <div className="flex gap-3 text-white mt-2 lg:mt-0 mr-4 lg:mr-0 justify-end">
-          {themeSwitcher ? <ThemeSwitcherComponent /> : null}
-          <LangSwitcherComponent lng={lng} />
+          {themeSwitcher ? <ThemeSwitcher /> : null}
+          <LangSwitcher lng={lng} />
         </div>
       </div>
     </nav>

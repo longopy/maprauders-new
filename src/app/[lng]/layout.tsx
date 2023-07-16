@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import Providers from "@/app/[lng]/providers";
-import { useTranslation } from '@/i18n/index';
+import { useTranslation } from "@/i18n/index";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,6 +46,7 @@ export default function RootLayout({
     <html lang={params.lng} dir={dir(params.lng)}>
       <body className={inter.className}>
         <Providers>{children}</Providers>
+        <div id="modal-portal" />
       </body>
     </html>
   );

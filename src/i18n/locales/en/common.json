@@ -2,5 +2,9 @@
     "headers": {
         "maps": "Maps",
         "about": "About"
+    },
+    "messages": {
+        "viewInFullscreen": "View in full screen",
+        "inProgress": "In progress"
     }
 }

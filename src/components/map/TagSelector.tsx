@@ -1,8 +1,7 @@
 "use client";
-import { TagComponent } from "@/components/categories/TagComponent";
-import { CategoryComponent } from '@/components/categories/CategoryComponent';
-import { useState } from 'react';
-export function TagSelectorComponent({
+import { Category } from '@/components/categories/Category';
+import { Tag } from "@/components/categories/Tag";
+export function TagSelector({
 categories,
   lng,
 }: {
@@ -16,11 +15,11 @@ categories,
           <div
             className={`mx-5 border-${category["id"]}-tag border rounded border-x-0 border-t-0 mb-8`}
           >
-            <CategoryComponent id={category["id"]} lng={lng} />
+            <Category id={category["id"]} lng={lng} />
             <div className="mt-2 grid grid-cols-2 gap-2 px-2 pb-2">
               {category["tags"].map((tag: any) => (
                 <span key={`${tag["id"]}-tag`}>
-                  <TagComponent
+                  <Tag
                     id={tag["id"]}
                     qty={tag["qty"]}
                     lng={lng}

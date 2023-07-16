@@ -1,20 +1,24 @@
 "use client";
 
 import { MapPoint } from "@/app/_actions/point";
-import { ImageLayerComponent } from "@/components/map/ImageLayerComponent";
+import { ImageLayer } from "@/components/map/ImageLayer";
+import { Marker } from "@/components/map/Marker";
 import "@/styles/map.css";
-import { CRS, LatLng, latLngBounds, point } from "leaflet";
+import { CRS, LatLng, latLngBounds } from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { MapContainer, Marker, Popup, ZoomControl, useMapEvents } from "react-leaflet";
-import { MarkerComponent } from "@/components/map/MarkerComponent";
+import {
+  MapContainer,
+  ZoomControl
+} from "react-leaflet";
 
-const generateMarkers = (points: MapPoint[]) => {
+const generateMarkers = (lng:string, points: MapPoint[]) => {
   return points.map((point: MapPoint) => (
-    <MarkerComponent key={`marker-${point.id}`} point={point} />
+    <Marker key={`marker-${point.id}`} lng={lng} point={point} />
   ));
 };
 
-export function MapComponent({
+export function Map({
+  lng,
   points,
   zoom,
   minZoom,
@@ -22,6 +26,7 @@ export function MapComponent({
   imageDimensions,
   imagePath,
 }: {
+  lng: string;
   points: MapPoint[];
   zoom: number;
   minZoom: number;
@@ -49,15 +54,13 @@ export function MapComponent({
       scrollWheelZoom={false}
       zoomControl={false}
       attributionControl={false}
-      maxBounds={imageBounds}
+      // TODO: maxBounds doesnt work properly with tooltip autopan (maxbounds or autopan)?
+      //maxBounds={imageBounds}
       doubleClickZoom={false}
     >
       <ZoomControl position={"bottomright"} />
-      <ImageLayerComponent
-        imageDimensions={imageDimensions}
-        imagePath={imagePath}
-      />
-      {generateMarkers(points)}
+      <ImageLayer imageDimensions={imageDimensions} imagePath={imagePath} />
+      {generateMarkers(lng, points)}
     </MapContainer>
   );
 }

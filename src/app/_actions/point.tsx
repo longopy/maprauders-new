@@ -1,6 +1,6 @@
 import { getJSONFile } from "@/app/_actions/common";
 import { configPath, configPathI18n } from "@/config/params";
-import { mergeData } from './common';
+import { mergeData } from "./common";
 
 export interface Point {
   id: string;
@@ -22,7 +22,7 @@ export interface MapPoint {
   title: string;
   description: string;
   iconPath: string;
-  resource: string;
+  resourcePath?: string;
 }
 
 export async function getPoints(mapId: string): Promise<Point[]> {
@@ -49,7 +49,9 @@ export async function getMapPoints(
       title: point.title,
       description: point.description,
       iconPath: `/images/icons/points/${point.tag}.svg`,
-      resource: point.resource,
+      resourcePath: point.resource
+        ? `/images/maps/${mapId}/resources/${point.resource}`
+        : undefined,
     };
   });
 }
