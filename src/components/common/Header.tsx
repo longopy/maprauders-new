@@ -14,7 +14,7 @@ export function Header({ lng, themeSwitcher }: { lng: string, themeSwitcher: boo
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap py-4 px-14 bg-dark border-b border-accent border-opacity-40">
+    <nav className="flex items-center justify-between flex-wrap py-4 px-14 bg-dark border-b border-accent border-opacity-70">
       <Link
         href="/"
         className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72"

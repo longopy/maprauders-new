@@ -1,7 +1,6 @@
 import { Header } from '@/components/common/Header';
 
-// @ts-ignore params
-export default function HomePage({params}) {
+export default function HomePage({ params }: { params: any }) {
   return (
     <div>
       <Header lng={params.lng} themeSwitcher={true}/>

@@ -3,20 +3,20 @@ import MapCard from "@/components/menu/MapCard";
 import { promises as fs } from "fs";
 import { Header } from "@/components/common/Header";
 import { configPathI18n } from "@/config/params";
-import menuConfig from "@/config/menu.json";
 import { mergeData } from "@/app/_actions/common";
+import { getMapsConfig } from "@/app/_actions/mapConfig";
 
 const fetchItems = (lng: string) => {
-  return fs.readFile(`${configPathI18n}/${lng}/menu.json`).then((res) => {
+  return fs.readFile(`${configPathI18n}/${lng}/maps.json`).then((res) => {
     return JSON.parse(res.toString());
   });
 };
 
-// @ts-ignore: Params
-export default async function Maps({ params }) {
+export default async function Maps({ params }: { params: any }) {
   const { lng } = params;
   let items = await fetchItems(lng);
-  items = mergeData(menuConfig, items);
+  const mapsConfig = getMapsConfig();
+  items = mergeData(mapsConfig, items);
   return (
     <div>
       <Header lng={params.lng} themeSwitcher={true} />

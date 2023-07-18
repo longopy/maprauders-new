@@ -10,7 +10,7 @@ export function Sidebar({ component }: { component: React.ReactNode}) {
   const [collapsed, setSidebarCollapsed] = useState(true);
   return (
     <div
-      className={`flex fixed z-10 h-full transition-all ease-in-out duration-150 
+      className={`flex fixed z-10 h-full transition-all ease-in-out duration-150 opacity-95
     ${collapsed ? "translate-x-sidebar" : "translate-x-0"}`}
     >
       <div

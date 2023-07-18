@@ -243,11 +243,6 @@
   },
   {
     "id": 51,
-    "title": "Exclusa GYM - 4D",
-    "description": "La <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>exclusa de aire</a> permite escapar del mapa haciendo uso de la nave personal. Recuerda llevar contigo la <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>tarjeta de capitán</a> correcta."
-  },
-  {
-    "id": 52,
     "title": "Interruptor de habitación segura 1",
     "description": "Uno de los cuatro interruptores necesarios para liberar al <a target='_blank' href='https://marauders.fandom.com/wiki/Warden'>Warden</a>."
   }

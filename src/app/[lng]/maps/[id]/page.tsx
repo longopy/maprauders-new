@@ -1,35 +1,34 @@
-import { OutputCategory, getCategoriesFilteredAndCounted } from "@/app/_actions/category";
+import {
+  OutputCategory,
+  getCategoriesFilteredAndCounted,
+} from "@/app/_actions/category";
+import { getMapConfigById } from "@/app/_actions/mapConfig";
 import { MapPoint, Point, getMapPoints, getPoints } from "@/app/_actions/point";
 import { Header } from "@/components/common/Header";
-import { Sidebar } from "@/components/common/Sidebar";
-import { Map } from "@/components/map/Map";
-import { TagSelector } from "@/components/map/TagSelector";
+import TagSelectorMap from "@/components/map/TagSelectorMap";
 
-// @ts-ignore: Params
-export default async function MapPage({ params }) {
+export default async function MapPage({ params }: { params: any }) {
   const { lng, id } = params;
   const points: Point[] = await getPoints(id);
   const categories: OutputCategory[] = await getCategoriesFilteredAndCounted(
     id,
     points
   );
-  const mapPoints: MapPoint[] = await getMapPoints(points, id, lng);
+  const mapPoints: { [tag: string]: MapPoint[] } = await getMapPoints(
+    points,
+    id,
+    lng
+  );
+  const mapConfig: any = getMapConfigById(id);
   return (
     <div>
       <Header lng={lng} themeSwitcher={false} />
-      <Sidebar component={<TagSelector categories={categories} lng={lng} />} />
-      <div className="h-full">
-        <Map
-          lng={lng}
-          points={mapPoints}
-          // TODO: load data from config map file
-          zoom={-2}
-          minZoom={-2}
-          padding={[600, 600]}
-          imageDimensions={[1172.03, 792.57]}
-          imagePath={`/images/maps/${id}/map.svg`}
-        />
-      </div>
+      <TagSelectorMap
+        lng={lng}
+        mapConfig={mapConfig}
+        categories={categories}
+        points={mapPoints}
+      />
     </div>
   );
 }

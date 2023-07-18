@@ -243,11 +243,6 @@
   },
   {
     "id": 51,
-    "title": "Airlock GYM - 4D",
-    "description": "The <a target='_blank' href='https://marauders.fandom.com/wiki/Airlock'>airlock</a> allows you to escape from the map by using your personal ship. Remember to carry with you the correct <a target='_blank' href='https://marauders.fandom.com/wiki/Cpt._Keycard'>Cpt. keycard</a>."
-  },
-  {
-    "id": 52,
     "title": "Safe Room Switch 1",
     "description": "One of four switches needed to unleash the <a target='_blank' href='https://marauders.fandom.com/wiki/Warden'>Warden</a>."
   }

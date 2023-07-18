@@ -9,17 +9,16 @@ export interface Point {
   tag: string;
   position: Array<number>;
 }
-
 export interface PointText {
   title: string;
   description?: string;
 }
-
 export interface MapPoint {
   id: string;
   lat: number;
   lng: number;
   title: string;
+  tag: string;
   description: string;
   iconPath: string;
   resourcePath?: string;
@@ -37,10 +36,10 @@ export async function getMapPoints(
   points: Point[],
   mapId: string,
   lang: string
-): Promise<MapPoint[]> {
+): Promise<{ [tag: string]: MapPoint[] }> {
   const pointsText = await getPointsTextByLang(mapId, lang);
-  const pointsData = mergeData(points, pointsText);
-  return pointsData.map((point) => {
+  let pointsData = mergeData(points, pointsText);
+  pointsData = pointsData.map((point) => {
     const [lat, lng] = point.position;
     return {
       id: point.id,
@@ -48,10 +47,20 @@ export async function getMapPoints(
       lng: lng,
       title: point.title,
       description: point.description,
+      tag: point.tag,
       iconPath: `/images/icons/points/${point.tag}.svg`,
       resourcePath: point.resource
         ? `/images/maps/${mapId}/resources/${point.resource}`
         : undefined,
     };
   });
+  const pointsDataByTag: { [tag: string]: MapPoint[] } = {};
+  pointsData.forEach((point) => {
+    if (pointsDataByTag[point.tag]) {
+      pointsDataByTag[point.tag].push(point);
+    } else {
+      pointsDataByTag[point.tag] = [point];
+    }
+  });
+  return pointsDataByTag;
 }

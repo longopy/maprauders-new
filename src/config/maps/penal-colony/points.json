@@ -348,13 +348,6 @@
   },
   {
     "id": 51,
-    "resource": "airlock_gym_4d.png",
-    "category": "extraction",
-    "tag": "airlock",
-    "position": [-20.02247058579168, 74.00713406878067]
-  },
-  {
-    "id": 52,
     "resource": "safe_room_switch1.jpg",
     "category": "mission",
     "tag": "faction_mission",

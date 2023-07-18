@@ -5,6 +5,7 @@
     },
     "messages": {
         "viewInFullscreen": "View in full screen",
-        "inProgress": "In progress"
+        "inProgress": "In progress",
+        "reportProblem": "Report a problem"
     }
 }

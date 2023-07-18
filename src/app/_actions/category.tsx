@@ -50,3 +50,15 @@ export async function getCategoriesFilteredAndCounted(
 
   return output;
 }
+
+export function getAllTags(categories: OutputCategory[]): string[] {
+  const tags: string[] = [];
+  categories.forEach((category) => {
+    category.tags.forEach((tag) => {
+      if (!tags.includes(tag.id)) {
+        tags.push(tag.id);
+      }
+    });
+  });
+  return tags;
+}

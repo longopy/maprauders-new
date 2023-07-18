@@ -1,5 +1,5 @@
 .mask {
-  @apply fixed inset-0 bg-black opacity-50 z-[1000];
+  @apply fixed inset-0 bg-black opacity-70 z-[1000];
 }
 
 .wrapper {

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "penal-colony",
+    "inProgress": true,
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 3,
+    "padding": [600, 600],
+    "imageDimensions": [1172.03, 792.57]
+  }
+]

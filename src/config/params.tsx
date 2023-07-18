@@ -10,4 +10,5 @@ export const links = [
 ];
 
 export const configPath = "src/config";
-export const configPathI18n = "src/i18n/locales";
+export const configPathI18n = "src/i18n/locales"
+export const reportProblemUrl = "https://github.com/longopy"

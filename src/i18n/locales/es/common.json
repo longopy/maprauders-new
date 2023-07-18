@@ -5,6 +5,7 @@
     },
     "messages": {
         "viewInFullscreen": "Ver en pantalla completa",
-        "inProgress": "En progreso"
+        "inProgress": "En progreso",
+        "reportProblem": "Reporta un problema"
     }
 }
