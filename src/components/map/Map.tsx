@@ -7,39 +7,19 @@ import { reportProblemUrl } from "@/config/params";
 import { useTranslation } from "@/i18n/client";
 import "@/styles/map.css";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
-import { CRS, LatLng, Layer, latLngBounds, layerGroup } from "leaflet";
+import { CRS, LatLng, latLngBounds } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useRef, useState } from "react";
 import {
   FeatureGroup,
-  LayersControl,
+  LayerGroup,
   MapContainer,
   ZoomControl,
-  useMap
+  useMap,
+  useMapEvents,
 } from "react-leaflet";
-
-const generateMarkers = (
-  lng: string,
-  points: { [tag: string]: MapPoint[] },
-  selectedTags: string[]
-  ) => {
-  const featureGroups = Object.keys(points).map((tag) => {
-    const markers = points[tag].map((point) => (
-      <Marker key={point.id} lng={lng} point={point} />
-    ));
-    return (
-      <LayersControl.Overlay
-        key={`${tag}-layer-control`}
-        name={tag}
-        checked={selectedTags.includes(tag) ? true : false}
-      >
-        <FeatureGroup key={`${tag}-feature-group`}>{markers}</FeatureGroup>
-      </LayersControl.Overlay>
-    );
-  });
-  return featureGroups;
-};
+import MapFeatureGroup from "./MapFeatureGroup";
 
 export function Map({
   lng,
@@ -88,20 +68,23 @@ export function Map({
         attributionControl={false}
         // TODO: maxBounds doesnt work properly with tooltip autopan (maxbounds or autopan)?
         // maxBounds={imageBounds}
-        doubleClickZoom={false}
+        doubleClickZoom={true}
       >
         <ZoomControl position={"bottomright"} />
         <ImageLayer imageDimensions={imageDimensions} imagePath={imagePath} />
-        <LayersControl collapsed={true}>
-          {generateMarkers(lng, points, selectedTags)}
-        </LayersControl>
+        <MapFeatureGroup
+          lng={lng}
+          points={points}
+          selectedTags={selectedTags}
+          minZoom={minZoom}
+        />
       </MapContainer>
       <Link
         href={reportProblemUrl}
         target="_blank"
         title={messages["reportProblem"]}
       >
-        <div className="hidden bg-dark hover:bg-accent p-2 rounded-md border-accent border absolute top-20 mt-4 right-5 z-10">
+        <div className="bg-dark hover:bg-accent p-2 rounded-md border-accent border absolute top-20 mt-4 right-6 z-10">
           <ExclamationTriangleIcon className="h-5 w-5 text-white" />
         </div>
       </Link>

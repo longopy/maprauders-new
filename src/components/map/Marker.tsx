@@ -11,8 +11,8 @@ const pointerIcon = (iconPath: string, zIndex: number) => {
     className: "icon",
     iconUrl: iconPath,
     iconSize: iconSize,
-    iconAnchor: [width-15.7, height+3.5],
-    popupAnchor: [0, -height],
+    iconAnchor: [width-15.7, height],
+    popupAnchor: [0, -height+4],
     setZIndexOffset: zIndex,
   });
 };
@@ -36,7 +36,7 @@ export function Marker({lng,  point }: {lng:string, point: MapPoint }) {
       <Tooltip
         className="tooltip tooltip-name"
         direction="right"
-        offset={[14.7, -32]}
+        offset={[14.7, -30]}
       >
         <span className="font-bold uppercase">{point.title}</span>
       </Tooltip>
