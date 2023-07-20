@@ -2,325 +2,246 @@
   {
     "id": 0,
     "size": 18,
-    "fillColor": "#8264c4",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#8264c4",
     "rotation": 0,
-    "position": [-35.8593755, -77.20220322380128]
+    "position": [-350.99028004115, 1300]
   },
   {
     "id": 1,
     "size": 18,
-    "fillColor": "#a6c464",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#a6c464",
     "rotation": 0,
-    "position": [-19.3359375, -77.20220322380128]
+    "position": [-150.00971995884584, 1300]
   },
   {
     "id": 2,
     "size": 18,
-    "fillColor": "#af4661",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#af4661",
     "rotation": 0,
-    "position": [-2.63671875, -77.20220322380128]
+    "position": [50.00971995884584, 1300]
   },
   {
     "id": 3,
     "size": 18,
-    "fillColor": "#a6c464",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#a6c464",
     "rotation": 0,
-    "position": [75.234375, -77.20220322380128]
+    "position": [250.00971995884584, 1300]
   },
   {
     "id": 4,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-74.10271941295935, 11.090516351674419]
+    "position": [63.73292901098853, -787.5]
   },
   {
     "id": 5,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-75.79883881148436, 27.515779411011472]
+    "position": [269.2740506400347, -791]
   },
   {
     "id": 6,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-57.64044603867838, 34.32029235839481]
+    "position": [340.08223753362074, -580.5]
   },
   {
     "id": 7,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-56.07421875, 47.82101292865236]
+    "position": [495.40482674514567, -564]
   },
   {
     "id": 8,
     "size": 14,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-20.0390625, 58.541505475953215]
+    "position": [621.8185637436414, -149]
   },
   {
     "id": 9,
     "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 90,
-    "position": [-37.6171875, 47.46952136972446]
+    "position": [499.9091758882407, -347.25]
   },
   {
     "id": 10,
     "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-53.110487596136586, 7.548493910252223]
+    "position": [37.05266811479629, -530.375]
   },
   {
     "id": 11,
     "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [17.053978579149977, 7.402298996795373]
+    "position": [29.118372209934535, 257]
   },
   {
     "id": 12,
     "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 90,
-    "position": [17.50181141858739, 33.501125551592594]
+    "position": [331.6403108109979, 272.75]
   },
   {
     "id": 13,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [29.332502163072284, 8.096606559968372]
+    "position": [42.61974999647475, 395.25]
   },
   {
     "id": 14,
     "size": 9,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [10.987063081253531, 23.956804552265744]
+    "position": [221.62928851867622, 205.75]
   },
   {
     "id": 15,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": -45,
-    "position": [15.916995410104391, -13.593349874600975]
+    "position": [-209.18059220403285, 249.25]
   },
   {
     "id": 16,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-14.492247979062341, -20.051943421078832]
+    "position": [-275.40685188210927, -101.5]
   },
   {
     "id": 17,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [-39.47631881835937, -37.535008314685214]
+    "position": [-477.3187909760593, -368.95913652002224]
   },
   {
     "id": 18,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 90,
-    "position": [-16.921688541662764, -36.13473402569891]
+    "position": [-461.2955127516002, -92]
   },
   {
     "id": 19,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 90,
-    "position": [-25.01511382511238, -35.30085808274117]
+    "position": [-450.80988835533793, -202.5]
   },
   {
     "id": 20,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 45,
-    "position": [52.228515625, -15.62321345783306]
+    "position": [-232.82805499852458, 692.125]
   },
   {
     "id": 21,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 45,
-    "position": [83.73022051404244, -30.83982364464802]
+    "position": [-325.2378576840715, 1030]
   },
   {
     "id": 22,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 45,
-    "position": [71.3671875, -30.91309627119658]
+    "position": [-404.3092429130717, 888.5]
   },
   {
     "id": 23,
     "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 45,
-    "position": [73.74613349146973, -29.159655329641478]
+    "position": [-370.6642707327104, 913.75]
   },
   {
     "id": 24,
-    "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": 45,
-    "position": [71.3671875, -30.91309627119658]
+    "size": 10,
+    "color": "#fff",
+    "rotation": -45,
+    "position": [-358.8204867133395, 824.5]
   },
   {
     "id": 25,
     "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": -45,
-    "position": [66.9828994283545, -24.64832477737432]
+    "color": "#fff",
+    "rotation": 0,
+    "position": [71.22593409470744, -171.5]
   },
   {
     "id": 26,
     "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 0,
-    "position": [73.828125, 10.738653461759228]
+    "position": [71.22593409470744, 910]
   },
   {
     "id": 27,
-    "size": 10,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": 0,
-    "position": [-19.6875, 10.914399241223165]
+    "size": 12,
+    "color": "#fff",
+    "rotation": 10,
+    "position": [-51.1208518117337, 800]
   },
   {
     "id": 28,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": 10,
-    "position": [69.45231754041794, -5.164064030553362]
+    "color": "#fff",
+    "rotation": 90,
+    "position": [46.37004886564273, -305]
   },
   {
     "id": 29,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#fff",
     "rotation": 90,
-    "position": [-35.91421885147737, 8.391440613466422]
+    "position": [46.37004886564273,26.25]
   },
   {
     "id": 30,
     "size": 12,
-    "fillColor": "#fff",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": 90,
-    "position": [-4.615031050245435, 7.269735830065315]
+    "color": "#facd45",
+    "rotation": 0,
+    "position": [-193.89286204954715,-170.75]
   },
   {
     "id": 31,
     "size": 12,
-    "fillColor": "#facd45",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": 0,
-    "position": [-19.954557418879038, -13.767494357430232]
+    "color": "#facd45",
+    "rotation": 90,
+    "position": [39.11370893241383,-378]
   },
   {
     "id": 32,
     "size": 12,
-    "fillColor": "#facd45",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": 90,
-    "position": [-40.65133740677375, 7.789285219779417]
+    "color": "#facd45",
+    "rotation": -45,
+    "position": [186.88087827237644,-325.5]
   },
   {
     "id": 33,
     "size": 12,
-    "fillColor": "#facd45",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": -45,
-    "position": [-33.79496476126978, 21.979108068999473]
+    "color": "#facd45",
+    "rotation": 0,
+    "position": [271.83435148074943,-146.25]
   },
   {
     "id": 34,
     "size": 12,
-    "fillColor": "#facd45",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
-    "rotation": 0,
-    "position": [-19.951171875000014, 27.698121180030256]
-  },
-  {
-    "id": 35,
-    "size": 12,
-    "fillColor": "#facd45",
-    "outlineColor": "#000",
-    "outlineWidth": 4,
+    "color": "#facd45",
     "rotation": 45,
-    "position": [-5.823980131967176, 22.01533396061229]
+    "position": [205.63299794397676,14]
   }
 ]

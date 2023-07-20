@@ -8,7 +8,7 @@ const iconSize: PointExpression = [32.2, 45.5];
 const pointerIcon = (iconPath: string, zIndex: number) => {
   const [width, height] = iconSize as [number, number]
   return new Icon({
-    className: "icon",
+    className: "marker-icon",
     iconUrl: iconPath,
     iconSize: iconSize,
     iconAnchor: [width-15.7, height],

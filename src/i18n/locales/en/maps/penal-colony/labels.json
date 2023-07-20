@@ -97,11 +97,11 @@
   },
   {
     "id": 24,
-    "title": "BUNKS"
+    "title": "STAFF LOCKERS"
   },
   {
     "id": 25,
-    "title": "STAFF LOCKERS"
+    "title": "CENTRAL TOWER"
   },
   {
     "id": 26,
@@ -109,38 +109,34 @@
   },
   {
     "id": 27,
-    "title": "CENTRAL TOWER"
-  },
-  {
-    "id": 28,
     "title": "CELL BLOCK\nLEVEL 3"
   },
   {
-    "id": 29,
+    "id": 28,
     "title": "CELL BLOCK\nLEVEL 1"
   },
   {
-    "id": 30,
+    "id": 29,
     "title": "CELL BLOCK\nLEVEL 2"
   },
   {
-    "id": 31,
+    "id": 30,
     "title": "WORKSHOP"
   },
   {
-    "id": 32,
+    "id": 31,
     "title": "CANTEEN"
   },
   {
-    "id": 33,
+    "id": 32,
     "title": "VISITATION"
   },
   {
-    "id": 34,
+    "id": 33,
     "title": "GYM"
   },
   {
-    "id": 35,
+    "id": 34,
     "title": "ARRIVALS"
   }
 ]

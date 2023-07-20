@@ -29,7 +29,7 @@ export default function PopupCard({
   };
 
   return (
-    <div className="rounded-md shadow-m bg-transparent flex flex-col h-full popup-card">
+    <div className="rounded-md shadow-m bg-transparent flex flex-col h-full popup-card font-montserrat">
       {href != undefined ? (
         <div className="relative group cursor-pointer" onClick={openModal}>
           <div className="absolute inset-0 z-10 rounded-t-lg bg-dark text-light text-sm text-center flex flex-col items-center justify-center opacity-0 bg-opacity-70 hover:opacity-100 duration-200">
@@ -51,7 +51,7 @@ export default function PopupCard({
         <div className="font-bold text-lg mb-2 uppercase text-center">
           {title}
         </div>
-        <div className="px-4">
+        <div className="px-4 text-sm">
           <p dangerouslySetInnerHTML={{ __html: descriptionPurified }} />
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function PopupCard({
         <Modal
           closable
           showCloseIcon
-          size="xl"
+          size="2xl"
           background="transparent"
           isOpen={isModalOpen}
           onClose={closeModal}
@@ -70,7 +70,8 @@ export default function PopupCard({
               alt={`${title} image`}
               className="w-full h-full"
               width={1000}
-              height={835.933}
+              height={1335.933}
+              layout="responsive"
               priority
             />
           </div>

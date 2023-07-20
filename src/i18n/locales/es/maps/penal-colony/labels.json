@@ -81,7 +81,7 @@
   },
   {
     "id": 20,
-    "title": "PUNTO DE CONTROL"
+    "title": "PUNTO\nDE CONTROL"
   },
   {
     "id": 21,
@@ -97,11 +97,11 @@
   },
   {
     "id": 24,
-    "title": "LITERAS"
+    "title": "TAQUILLAS\nPERSONAL"
   },
   {
     "id": 25,
-    "title": "TAQUILLAS\nPERSONAL"
+    "title": "TORRE CENTRAL"
   },
   {
     "id": 26,
@@ -109,38 +109,34 @@
   },
   {
     "id": 27,
-    "title": "TORRE CENTRAL"
-  },
-  {
-    "id": 28,
     "title": "BLOQUE DE CELDAS\n NIVEL 3"
   },
   {
-    "id": 29,
+    "id": 28,
     "title": "BLOQUE DE CELDAS\n NIVEL 1"
   },
   {
-    "id": 30,
+    "id": 29,
     "title": "BLOQUE DE CELDAS\n NIVEL 2"
   },
   {
-    "id": 31,
+    "id": 30,
     "title": "TALLER"
   },
   {
-    "id": 32,
+    "id": 31,
     "title": "CANTINA"
   },
   {
-    "id": 33,
+    "id": 32,
     "title": "VISITAS"
   },
   {
-    "id": 34,
+    "id": 33,
     "title": "GYM"
   },
   {
-    "id": 35,
+    "id": 34,
     "title": "LLEGADAS"
   }
 ]

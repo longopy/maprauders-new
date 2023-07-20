@@ -2,7 +2,6 @@
 
 import { MapPoint } from "@/app/_actions/point";
 import { ImageLayer } from "@/components/map/ImageLayer";
-import { Marker } from "@/components/map/Marker";
 import { reportProblemUrl } from "@/config/params";
 import { useTranslation } from "@/i18n/client";
 import "@/styles/map.css";
@@ -10,21 +9,16 @@ import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { CRS, LatLng, latLngBounds } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
-import { useRef, useState } from "react";
-import {
-  FeatureGroup,
-  LayerGroup,
-  MapContainer,
-  ZoomControl,
-  useMap,
-  useMapEvents,
-} from "react-leaflet";
-import MapFeatureGroup from "./MapFeatureGroup";
+import { MapContainer, ZoomControl } from "react-leaflet";
+import MapFeatureGroup from "@/components/map/MapFeatureGroup";
+import MapLabelGroup from "@/components/map/MapLabelGroup";
+import { MapLabel } from "@/app/_actions/label";
 
 export function Map({
   lng,
   selectedTags,
   points,
+  labels,
   zoom,
   minZoom,
   maxZoom,
@@ -35,6 +29,7 @@ export function Map({
   lng: string;
   selectedTags: string[];
   points: { [tag: string]: MapPoint[] };
+  labels: MapLabel[];
   zoom: number;
   minZoom: number;
   maxZoom: number;
@@ -63,7 +58,7 @@ export function Map({
         minZoom={minZoom}
         maxZoom={maxZoom}
         center={center}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         zoomControl={false}
         attributionControl={false}
         // TODO: maxBounds doesnt work properly with tooltip autopan (maxbounds or autopan)?
@@ -72,6 +67,7 @@ export function Map({
       >
         <ZoomControl position={"bottomright"} />
         <ImageLayer imageDimensions={imageDimensions} imagePath={imagePath} />
+        <MapLabelGroup labels={labels} />
         <MapFeatureGroup
           lng={lng}
           points={points}

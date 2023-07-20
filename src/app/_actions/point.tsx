@@ -33,8 +33,8 @@ function getPointsTextByLang(mapId: string, lang: string) {
 }
 
 export async function getMapPoints(
-  points: Point[],
   mapId: string,
+  points: Point[],
   lang: string
 ): Promise<{ [tag: string]: MapPoint[] }> {
   const pointsText = await getPointsTextByLang(mapId, lang);

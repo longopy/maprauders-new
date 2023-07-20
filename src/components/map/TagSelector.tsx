@@ -1,6 +1,5 @@
 import { Category } from "@/components/categories/Category";
 import { Tag } from "@/components/categories/Tag";
-import Link from "next/link";
 
 export function TagSelector({
   lng,

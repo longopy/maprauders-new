@@ -33,7 +33,7 @@ export default async function Maps({ params }: { params: any }) {
                   lng={lng}
                   title={item.title}
                   description={item.description}
-                  href={`/images/maps/${item.id}/card.png`}
+                  href={`/images/maps/${item.id}/card.webp`}
                   inProgress={item.inProgress}
                 />
               </Link>

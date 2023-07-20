@@ -84,6 +84,15 @@
   min-width: 350px;
 }
 
-.leaflet-marker-icon:not(:hover) {
-  z-index: 0 !important;
+.label-icon {
+  cursor: default;
+}
+
+
+leaflet-marker-icon:has(> .marker-icon) {
+  z-index: 1 !important;
+}
+
+leaflet-marker-icon:has(> .label) {
+  z-index: 0 !important
 }

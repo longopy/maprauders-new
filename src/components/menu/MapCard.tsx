@@ -34,7 +34,7 @@ export default async function MapCard({
         <div className="font-bold text-lg mb-2 uppercase text-center group-hover:text-xl group-hover:text-accent">
           {title}
         </div>
-        <p className="text-base text-center ">{description}</p>
+        <p className="text-sm text-center ">{description}</p>
       </div>
     </div>
   );

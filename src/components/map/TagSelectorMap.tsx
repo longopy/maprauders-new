@@ -1,11 +1,12 @@
 "use client";
 import { OutputCategory } from "@/app/_actions/category";
+import { MapLabel } from "@/app/_actions/label";
 import { MapConfig } from "@/app/_actions/mapConfig";
 import { MapPoint } from "@/app/_actions/point";
 import { Sidebar } from "@/components/common/Sidebar";
 import { Map } from "@/components/map/Map";
 import { TagSelector } from "@/components/map/TagSelector";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function getAllTags(categories: OutputCategory[]): string[] {
   const tags: string[] = [];
@@ -24,11 +25,13 @@ export default function TagSelectorMap({
   mapConfig,
   categories,
   points,
+  labels,
 }: {
   lng: string;
   mapConfig: MapConfig;
   categories: OutputCategory[];
   points: { [tag: string]: MapPoint[] };
+  labels: MapLabel[];
 }) {
   const allTags = getAllTags(categories);
   const [selectedTags, setSelectedTags] = useState<string[]>(allTags);
@@ -49,6 +52,7 @@ export default function TagSelectorMap({
           lng={lng}
           selectedTags={selectedTags}
           points={points}
+          labels={labels}
           zoom={mapConfig.zoom}
           minZoom={mapConfig.minZoom}
           maxZoom={mapConfig.maxZoom}
