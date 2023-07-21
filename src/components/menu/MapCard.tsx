@@ -1,5 +1,6 @@
+"use client";
+import { useTranslation } from "@/i18n/client";
 import Image from "next/image";
-import { useTranslation } from "@/i18n/index";
 export default async function MapCard({
   lng,
   title,
@@ -13,7 +14,7 @@ export default async function MapCard({
   href: string;
   inProgress?: boolean;
 }) {
-  const { t, i18n } = await useTranslation(lng, "common");
+  const { t, i18n } = useTranslation(lng, "common");
   const messages: any = t("messages", { returnObjects: true });
   return (
     <div className="relative rounded-md shadow-md bg-white dark:bg-dark hover:border-accent hover:border-opacity-100 hover:scale-105 border border-zinc-100 dark:border-opacity-20 cursor-pointer flex flex-col h-full group">
