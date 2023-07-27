@@ -1,7 +1,7 @@
 "use client";
 import { useTranslation } from "@/i18n/client";
 import Image from "next/image";
-export default async function MapCard({
+export default function MapCard({
   lng,
   title,
   description,

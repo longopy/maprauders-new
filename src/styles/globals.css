@@ -31,7 +31,6 @@ body{
 }
 
 html {
-  @apply font-montserrat;
   text-rendering: optimizeLegibility;
   font-smooth: auto;
   height: auto;

@@ -25,9 +25,6 @@ module.exports = {
       zinc: colors.zinc,
     },
     extend: {
-      fontFamily: {
-        montserrat: ["Montserrat"],
-      },
       animation: {
         fade: "kfr1 0.2s ease-in-out",
         "fade-l": "kfr2 0.2s ease-in-out",

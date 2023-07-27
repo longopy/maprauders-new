@@ -4,8 +4,8 @@ export default function HomePage({ params }: { params: any }) {
   return (
     <div>
       <Header lng={params.lng} themeSwitcher={true}/>
-      <main className="flex flex-col items-center justify-between p-24">
-        <div>Home</div>
+      <main className="p-10">
+        <h1 className='font-bold text-xl text-center'>Welcome to Maprauders!</h1>
       </main>
     </div>
   );

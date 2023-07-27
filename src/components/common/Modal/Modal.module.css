@@ -1,5 +1,5 @@
 .mask {
-  @apply fixed inset-0 bg-black opacity-70 z-[1000];
+  @apply fixed inset-0 bg-black opacity-75 z-[1000];
 }
 
 .wrapper {
@@ -35,7 +35,7 @@
 }
 
 .modal.modal-2xl {
-  @apply w-full md:w-[1600px];
+  @apply w-full md:w-[1400px];
 }
 
 .modal.modal-full {

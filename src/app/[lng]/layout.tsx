@@ -1,8 +1,10 @@
 import Providers from "@/app/[lng]/providers";
+import { montserrat } from "@/app/fonts";
 import { languages } from "@/i18n/settings";
 import "@/styles/globals.css";
 import { dir } from "i18next";
 import type { Metadata } from "next";
+
 
 export const metadata: Metadata = {
   title: "Maprauders",
@@ -38,7 +40,7 @@ export default function RootLayout({
   params: { lng: string };
 }) {
   return (
-    <html lang={params.lng} dir={dir(params.lng)}>
+    <html lang={params.lng} dir={dir(params.lng)} className={montserrat.className}>
       <body>
         <Providers>{children}</Providers>
         <div id="modal-portal" />
