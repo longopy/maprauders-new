@@ -72,7 +72,6 @@ export function Map({
           lng={lng}
           points={points}
           selectedTags={selectedTags}
-          minZoom={minZoom}
         />
       </MapContainer>
       <Link

@@ -7,12 +7,10 @@ export default function MapFeatureGroup({
   lng,
   points,
   selectedTags,
-  minZoom,
 }: {
   lng: string;
   points: { [tag: string]: MapPoint[] };
   selectedTags: string[];
-  minZoom: number;
 }) {
   return (
     <LayerGroup>
