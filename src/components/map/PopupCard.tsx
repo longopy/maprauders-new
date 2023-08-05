@@ -32,7 +32,7 @@ export default function PopupCard({
     <div className="rounded-md shadow-m bg-transparent flex flex-col h-full popup-card font-montserrat">
       {href != undefined ? (
         <div className="relative group cursor-pointer" onClick={openModal}>
-          <div className="absolute inset-0 z-10 rounded-t-lg bg-dark text-light text-sm text-center flex flex-col items-center justify-center opacity-0 bg-opacity-70 hover:opacity-100 duration-200">
+          <div className="absolute inset-0 z-10 rounded-t-lg bg-dark text-light text-sm text-center flex flex-col items-center justify-center opacity-0 bg-opacity-60 hover:opacity-100 duration-200">
             {messages["viewInFullscreen"]}
           </div>
           <div className="relative">
@@ -71,7 +71,6 @@ export default function PopupCard({
               className="w-full h-full"
               width={1000}
               height={1335.933}
-              layout="responsive"
               priority
             />
           </div>
