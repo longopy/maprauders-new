@@ -29,6 +29,7 @@ export function Marker({lng,  point }: {lng:string, point: MapPoint }) {
       key={point.id}
       position={position}
       icon={icon}
+      zIndexOffset={1000}
       eventHandlers={{
         mouseover: (e) => markerMouseOver(e, point.iconPath),
       }}
