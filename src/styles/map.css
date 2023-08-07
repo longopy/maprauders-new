@@ -88,11 +88,6 @@
   cursor: default;
 }
 
-
-leaflet-marker-icon:has(> .marker-icon) {
-  z-index: 1 !important;
-}
-
-leaflet-marker-icon:has(> .label) {
-  z-index: 0 !important
+.marker-icon:hover {
+  z-index: 4000 !important;
 }

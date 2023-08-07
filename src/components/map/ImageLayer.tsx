@@ -24,7 +24,6 @@ export function ImageLayer({
     new LatLng(-imageDimensions[1], -imageDimensions[0]),
     new LatLng(imageDimensions[1], imageDimensions[0]),
   ]);
-  map.fitBounds(imageBounds);
   return (
     <SVGOverlay bounds={imageBounds}>
       <SVG

@@ -6,7 +6,7 @@ import { FeatureGroup, LayerGroup, LayersControl, useMap } from "react-leaflet";
 export default function MapFeatureGroup({
   lng,
   points,
-  selectedTags,
+  selectedTags
 }: {
   lng: string;
   points: { [tag: string]: MapPoint[] };

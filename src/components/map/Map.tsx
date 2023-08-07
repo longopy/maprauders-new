@@ -1,18 +1,20 @@
 "use client";
 
+import { MapLabel } from "@/app/_actions/label";
 import { MapPoint } from "@/app/_actions/point";
 import { ImageLayer } from "@/components/map/ImageLayer";
+import MapFeatureGroup from "@/components/map/MapFeatureGroup";
+import MapLabelGroup from "@/components/map/MapLabelGroup";
 import { reportProblemUrl } from "@/config/params";
 import { useTranslation } from "@/i18n/client";
 import "@/styles/map.css";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
-import { CRS, LatLng, latLngBounds } from "leaflet";
+import { randomUUID } from "crypto";
+import { CRS, LatLng, latLngBounds, Map as LeafletMap, map } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
+import { use, useEffect, useRef, useState } from "react";
 import { MapContainer, ZoomControl } from "react-leaflet";
-import MapFeatureGroup from "@/components/map/MapFeatureGroup";
-import MapLabelGroup from "@/components/map/MapLabelGroup";
-import { MapLabel } from "@/app/_actions/label";
 
 export function Map({
   lng,
@@ -39,7 +41,7 @@ export function Map({
 }) {
   const { t } = useTranslation(lng, "common");
   const messages: any = t("messages", { returnObjects: true });
-  const center = new LatLng(imageDimensions[0] / 2, imageDimensions[1] / 2);
+  const center = new LatLng(0,0);
   const imageBounds = latLngBounds([
     new LatLng(
       -imageDimensions[1] - padding[1],
@@ -50,20 +52,32 @@ export function Map({
       imageDimensions[0] + padding[0]
     ),
   ]);
+  const mapRef = useRef<LeafletMap>(null);
+  useEffect(() => {
+    if (mapRef.current) {
+      const currentCenter = mapRef.current.getCenter();
+      const currentZoom = mapRef.current.getZoom();
+      mapRef.current.setView(currentCenter, currentZoom, {
+        animate: false,
+        noMoveStart: true
+      });
+    }
+  }, [selectedTags]);
   return (
     <div>
       <MapContainer
+        ref={mapRef}
         crs={CRS.Simple}
         zoom={zoom}
+        center={center}
         minZoom={minZoom}
         maxZoom={maxZoom}
-        center={center}
         scrollWheelZoom={true}
+        doubleClickZoom={true}
         zoomControl={false}
         attributionControl={false}
         // TODO: maxBounds doesnt work properly with tooltip autopan (maxbounds or autopan)?
         // maxBounds={imageBounds}
-        doubleClickZoom={true}
       >
         <ZoomControl position={"bottomright"} />
         <ImageLayer imageDimensions={imageDimensions} imagePath={imagePath} />
