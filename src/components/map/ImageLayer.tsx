@@ -29,8 +29,8 @@ export function ImageLayer({
       <SVG
         className="mt-10"
         src={imagePath}
-        width="auto"
-        height="auto"
+        width="100%"
+        height="100%"
         title="Map image"
       />
     </SVGOverlay>
