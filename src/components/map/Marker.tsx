@@ -17,9 +17,6 @@ const pointerIcon = (iconPath: string, zIndex: number) => {
   });
 };
 
-const markerMouseOver = (e: any, iconPath: string) => {
-  e.target.setIcon(pointerIcon(iconPath, 1000));
-};
 
 export function Marker({lng,  point }: {lng:string, point: MapPoint }) {
   const position = new LatLng(point.lat, point.lng);
@@ -30,9 +27,6 @@ export function Marker({lng,  point }: {lng:string, point: MapPoint }) {
       position={position}
       icon={icon}
       zIndexOffset={1000}
-      eventHandlers={{
-        mouseover: (e) => markerMouseOver(e, point.iconPath),
-      }}
     >
       <Tooltip
         className="tooltip tooltip-name"

@@ -32,7 +32,7 @@ export default function MapCard({
         priority
       />
       <div className="px-6 py-4 text-black dark:text-light">
-        <div className="font-bold text-lg mb-2 uppercase text-center group-hover:text-xl group-hover:text-accent">
+        <div className="font-bold text-lg mb-2 uppercase text-center group-hover:text-accent">
           {title}
         </div>
         <p className="text-sm text-center ">{description}</p>

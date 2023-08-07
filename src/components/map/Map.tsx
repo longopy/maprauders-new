@@ -93,7 +93,7 @@ export function Map({
         target="_blank"
         title={messages["reportProblem"]}
       >
-        <div className="bg-dark hover:bg-accent p-2 rounded-md border-accent border absolute top-20 mt-4 right-6 z-10">
+        <div className="bg-dark hover:bg-accent p-2 rounded-md border-accent border absolute bottom-20 mb-6 right-6 hud-btn">
           <ExclamationTriangleIcon className="h-5 w-5 text-white" />
         </div>
       </Link>
