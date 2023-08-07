@@ -22,7 +22,7 @@ export function Sidebar({ component }: { component: React.ReactNode}) {
       </div>
       <div className="mt-5 text-white z-20">
         <button
-          className="bg-dark pl-1 pr-2 py-3 border-accent border-l-0 border rounded-r-lg scale-105 group"
+          className="bg-dark pl-1 pr-3 py-3 border-accent border-l-0 border rounded-r-lg sidebar-btn group"
           onClick={() => setSidebarCollapsed((prev) => !prev)}
         >
           {collapsed ? (

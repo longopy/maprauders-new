@@ -64,7 +64,7 @@ export function Map({
     }
   }, [selectedTags]);
   return (
-    <div>
+    <div className="relative">
       <MapContainer
         ref={mapRef}
         crs={CRS.Simple}
@@ -93,7 +93,7 @@ export function Map({
         target="_blank"
         title={messages["reportProblem"]}
       >
-        <div className="bg-dark hover:bg-accent p-2 rounded-md border-accent border absolute bottom-20 mb-6 right-6 hud-btn">
+        <div className="bg-dark hover:bg-accent p-2 rounded-md border-accent border hud-btn report-problem-btn">
           <ExclamationTriangleIcon className="h-5 w-5 text-white" />
         </div>
       </Link>

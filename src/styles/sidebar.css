@@ -5,3 +5,7 @@
 .w-sidebar {
     width: 32rem;
 }
+
+.sidebar-btn {
+    margin-left: -0.05rem
+}

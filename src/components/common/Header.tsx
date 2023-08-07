@@ -47,7 +47,7 @@ export function Header({ lng, themeSwitcher }: { lng: string, themeSwitcher: boo
             </span>
           ))}
         </div>
-        <div className="flex gap-3 text-white mt-2 lg:mt-0 mr-4 lg:mr-0 justify-end">
+        <div className="flex gap-3 text-white mt-2 lg:mt-0 mr-4 lg:mr-0 mb-2 lg:mb-0 justify-end">
           {themeSwitcher ? <ThemeSwitcher /> : null}
           <LangSwitcher lng={lng} />
         </div>

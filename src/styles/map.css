@@ -95,3 +95,9 @@
 .hud-btn {
   z-index: 5;
 }
+
+.report-problem-btn {
+  position: absolute;
+  right: 24px;
+  bottom: 110px;
+}
