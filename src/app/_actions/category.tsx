@@ -1,5 +1,5 @@
 import { getJSONFile } from "@/app/_actions/common";
-import { configPath } from "@/config/params";
+import { configPath } from "../../../config/params";
 import { Point } from "@/app/_actions/point";
 
 export interface Category {

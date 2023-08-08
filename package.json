@@ -1,14 +1,11 @@
 {
   "name": "maprauders",
   "version": "0.1.0",
-  "homepage": "https://longopy.github.io/maps",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -33,7 +30,6 @@
     "@types/dompurify": "^3.0.2",
     "@types/leaflet": "^1.9.3",
     "dompurify": "^3.0.5",
-    "gh-pages": "^5.0.0",
     "i18next": "^23.2.8",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-resources-to-backend": "^1.1.4",

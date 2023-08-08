@@ -5,7 +5,7 @@ import { MapPoint } from "@/app/_actions/point";
 import { ImageLayer } from "@/components/map/ImageLayer";
 import MapFeatureGroup from "@/components/map/MapFeatureGroup";
 import MapLabelGroup from "@/components/map/MapLabelGroup";
-import { reportProblemUrl } from "@/config/params";
+import { reportProblemUrl } from "../../../config/params";
 import { useTranslation } from "@/i18n/client";
 import "@/styles/map.css";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";

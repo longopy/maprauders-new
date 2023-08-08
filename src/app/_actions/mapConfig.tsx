@@ -1,4 +1,4 @@
-import mapsConfig from "@/config/maps.json";
+import mapsConfig from "../../../config/maps.json";
 
 export interface MapConfig {
   id: string;

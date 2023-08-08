@@ -6,7 +6,7 @@ import { useTranslation } from "@/i18n/client";
 import ThemeSwitcher from "@/components/common/ThemeSwitcher";
 import LangSwitcher from "@/components/common/LangSwitcher";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import { links } from "@/config/params";
+import { links } from "../../../config/params";
 
 export function Header({ lng, themeSwitcher }: { lng: string, themeSwitcher: boolean }) {
   const { t } = useTranslation(lng);
