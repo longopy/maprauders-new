@@ -1,7 +1,7 @@
 {
   "name": "maprauders",
   "version": "0.1.0",
-  "homepage": "https://longopy.github.io/maprauders-new",
+  "homepage": "https://longopy.github.io/maps",
   "private": true,
   "scripts": {
     "dev": "next dev",
