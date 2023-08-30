@@ -1,20 +1,13 @@
-import Link from "next/link";
-import MapCard from "@/components/menu/MapCard";
-import { promises as fs } from "fs";
-import { Header } from "@/components/common/Header";
-import { configPathI18n } from "@/config/params";
 import { mergeData } from "@/app/_actions/common";
 import { getMapsConfig } from "@/app/_actions/mapConfig";
-
-const fetchItems = (lng: string) => {
-  return fs.readFile(`${configPathI18n}/${lng}/maps.json`).then((res) => {
-    return JSON.parse(res.toString());
-  });
-};
+import { getMenuItems } from "@/app/_actions/menu";
+import { Header } from "@/components/common/Header";
+import MapCard from "@/components/menu/MapCard";
+import Link from "next/link";
 
 export default async function Maps({ params }: { params: any }) {
   const { lng } = params;
-  let items = await fetchItems(lng);
+  let items = await getMenuItems(lng);
   const mapsConfig = getMapsConfig();
   items = mergeData(mapsConfig, items);
   return (
@@ -26,7 +19,7 @@ export default async function Maps({ params }: { params: any }) {
             {items.map((item: any) => (
               <Link
                 key={item.id}
-                href={`/${lng}/maps/[id]`}
+                href={`/${lng}/maps/${item.id}`}
                 as={`/${lng}/maps/${item.id}`}
               >
                 <MapCard

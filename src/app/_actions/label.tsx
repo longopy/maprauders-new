@@ -1,5 +1,5 @@
 import { getJSONFile } from "@/app/_actions/common";
-import { configPath, configPathI18n } from "@/config/params";
+import { configPath, configPathI18n } from "../../../config/params";
 import { mergeData } from "./common";
 
 export interface Label {
