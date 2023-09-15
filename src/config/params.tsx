@@ -1,3 +1,5 @@
+import path from "path";
+
 export const links = [
     {
       id: "maps",
@@ -9,6 +11,6 @@ export const links = [
     }
 ];
 
-export const configPath = "config";
+export const configPath = "src/config"
 export const configPathI18n = "src/i18n/locales"
 export const reportProblemUrl = "https://github.com/longopy"

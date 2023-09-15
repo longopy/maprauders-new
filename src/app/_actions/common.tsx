@@ -1,4 +1,4 @@
-import { promises as fs } from "fs";
+import fs from "fs/promises";
 
 export function getJSONFile(filePath: string): Promise<any[]> {
   return fs.readFile(filePath).then((res) => {

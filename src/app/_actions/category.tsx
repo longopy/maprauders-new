@@ -1,6 +1,7 @@
 import { getJSONFile } from "@/app/_actions/common";
-import { configPath } from "../../../config/params";
+import { configPath } from "../../config/params";
 import { Point } from "@/app/_actions/point";
+import path from "path";
 
 export interface Category {
   id: string;
@@ -19,7 +20,7 @@ interface OutputTag {
   qty: number;
 }
 
-async function getCategories(mapId: string): Promise<Category[]> {
+async function getCategories(): Promise<Category[]> {
   return await getJSONFile(`${configPath}/categories.json`);
 }
 
@@ -27,7 +28,7 @@ export async function getCategoriesFilteredAndCounted(
   mapId: string,
   points: Point[]
 ): Promise<OutputCategory[]> {
-  const categories: Category[] = await getCategories(mapId);
+  const categories: Category[] = await getCategories();
   const output: OutputCategory[] = categories
     .filter((category) =>
       points.some((point) => point.category === category.id)
