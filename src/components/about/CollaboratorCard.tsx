@@ -33,7 +33,7 @@ export default function CollaboratorCard({
           {username}
         </div>
         <div className="text-center">
-          <span className="bg-blue-900 text-white text-sm font-medium mr-2 px-2.5 py-0.5 rounded capitalize inline-flex items-center justify-center">
+          <span className="bg-accent dark:text-dark text-white text-sm mr-2 px-2.5 py-0.5 rounded inline-flex items-center justify-center uppercase font-bold">
             {role}
           </span>
         </div>

@@ -45,3 +45,7 @@ html {
   color: white;
   background: var(--accent);
 }
+
+h2 {
+  @apply text-2xl font-bold;
+}
