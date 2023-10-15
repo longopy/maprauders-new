@@ -1,6 +1,6 @@
 .leaflet-container {
   width: 100wh;
-  height: calc(100vh - 6.3em);
+  height: calc(100vh - 5.5em);
   z-index: 1;
   @apply bg-gradient-to-t from-sky-900 to-dark;
 }

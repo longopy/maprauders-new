@@ -23,6 +23,7 @@ module.exports = {
       gray: colors.gray,
       slate: colors.slate,
       zinc: colors.zinc,
+      neutral: colors.neutral
     },
     extend: {
       animation: {

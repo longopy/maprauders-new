@@ -1,5 +1,6 @@
 import CollaboratorCard from "@/components/about/CollaboratorCard";
 import { CollaboratorsBlocks } from "@/components/about/CollaboratorsBlocks";
+import { CommunitiesBlocks } from "@/components/about/CommunitiesBlocks";
 import { Header } from "@/components/common/Header";
 
 export default function AboutPage({ params }: { params: any }) {
@@ -7,7 +8,10 @@ export default function AboutPage({ params }: { params: any }) {
   return (
     <main>
       <Header lng={params.lng} themeSwitcher={true} />
-      <CollaboratorsBlocks lng={params.lng} />
+      <div className="py-12">
+        <CommunitiesBlocks lng={params.lng} />
+        <CollaboratorsBlocks lng={params.lng} />
+      </div>
     </main>
   );
 }
